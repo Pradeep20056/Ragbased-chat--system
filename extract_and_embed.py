@@ -1,0 +1,96 @@
+import os
+import argparse
+import zipfile
+import tempfile
+import logging
+from pathlib import Path
+
+# Langchain imports (v2 native preferred)
+from langchain_ollama import OllamaEmbeddings
+from langchain_postgres import PGVector
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+import fitz  # PyMuPDF
+from langchain_core.documents import Document
+
+# Docling for OCR
+try:
+    from docling.document_converter import DocumentConverter
+    DOCLING_AVAILABLE = True
+except ImportError:
+    DOCLING_AVAILABLE = False
+    import fitz  # PyMuPDF fallback
+
+# Logging configuration
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+# Database configuration
+CONNECTION_STRING = "postgresql+psycopg2://admin:password@localhost:5444/tender_eval"
+COLLECTION_NAME = "bidder_documents"
+
+def extract_text(file_path):
+    """Extract text using PyMuPDF (lighter and faster than Docling OCR)."""
+    logger.info(f"Extracting text with PyMuPDF: {file_path}")
+    text = ""
+    try:
+        with fitz.open(file_path) as doc:
+            for page in doc:
+                text += page.get_text()
+    except Exception as e:
+        logger.error(f"PyMuPDF failed for {file_path}: {e}")
+    return text
+
+def process_zip_file(zip_path: str):
+    """Extract zip and process documents."""
+    logger.info(f"Extracting {zip_path}")
+    extracted_docs = []
+    bidder_name = Path(zip_path).stem
+    
+    with tempfile.TemporaryDirectory() as temp_dir:
+        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+            zip_ref.extractall(temp_dir)
+            
+        for root, dirs, files in os.walk(temp_dir):
+            for file in files:
+                if file.lower().endswith('.pdf'):
+                    file_path = os.path.join(root, file)
+                    logger.info(f"Processing: {file}")
+                    
+                    text_content = extract_text(file_path)
+                    if text_content:
+                        doc = Document(
+                            page_content=text_content,
+                            metadata={"bidder": bidder_name, "source": file}
+                        )
+                        extracted_docs.append(doc)
+                        
+    return extracted_docs
+
+def embed_and_store(documents: list):
+    """Store chunks in PostgreSQL."""
+    if not documents:
+        return
+        
+    logger.info("Splitting text...")
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+    chunks = text_splitter.split_documents(documents)
+    
+    logger.info(f"Generating embeddings for {len(chunks)} chunks...")
+    embeddings = OllamaEmbeddings(model="nomic-embed-text")
+    
+    PGVector.from_documents(
+        embedding=embeddings,
+        documents=chunks,
+        collection_name=COLLECTION_NAME,
+        connection=CONNECTION_STRING,
+        pre_delete_collection=False
+    )
+    logger.info("Done.")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("zip_path")
+    args = parser.parse_args()
+    
+    docs = process_zip_file(args.zip_path)
+    embed_and_store(docs)
