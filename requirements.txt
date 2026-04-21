@@ -9,3 +9,5 @@ python-dotenv
 docling
 pymupdf
 langchain-google-genai
+pandas
+openpyxl

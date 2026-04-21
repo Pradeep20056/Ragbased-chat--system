@@ -11,6 +11,7 @@ from langchain_postgres import PGVector
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import fitz  # PyMuPDF
 from langchain_core.documents import Document
+import pandas as pd
 
 # Docling for OCR
 try:
@@ -25,7 +26,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Database configuration
-CONNECTION_STRING = "postgresql+psycopg2://admin:password@localhost:5444/tender_eval"
+CONNECTION_STRING = "postgresql+psycopg://admin:password@localhost:5444/tender_eval"
 COLLECTION_NAME = "bidder_documents"
 
 def extract_text(file_path):
@@ -40,6 +41,23 @@ def extract_text(file_path):
         logger.error(f"PyMuPDF failed for {file_path}: {e}")
     return text
 
+def extract_excel(file_path):
+    """Extract content from Excel files and convert to text representation."""
+    logger.info(f"Extracting Excel data: {file_path}")
+    text = ""
+    try:
+        # Read all sheets
+        xl = pd.ExcelFile(file_path)
+        for sheet_name in xl.sheet_names:
+            df = xl.parse(sheet_name)
+            if not df.empty:
+                text += f"\nSheet: {sheet_name}\n"
+                # Convert sheet content to string (CSV-like format for LLM to understand rows)
+                text += df.to_csv(index=False, sep="\t")
+    except Exception as e:
+        logger.error(f"Excel extraction failed for {file_path}: {e}")
+    return text
+
 def process_zip_file(zip_path: str):
     """Extract zip and process documents."""
     logger.info(f"Extracting {zip_path}")
@@ -52,11 +70,17 @@ def process_zip_file(zip_path: str):
             
         for root, dirs, files in os.walk(temp_dir):
             for file in files:
-                if file.lower().endswith('.pdf'):
-                    file_path = os.path.join(root, file)
-                    logger.info(f"Processing: {file}")
-                    
-                    text_content = extract_text(file_path)
+                    if file.lower().endswith('.pdf'):
+                        file_path = os.path.join(root, file)
+                        logger.info(f"Processing PDF: {file}")
+                        text_content = extract_text(file_path)
+                    elif file.lower().endswith(('.xlsx', '.xls')):
+                        file_path = os.path.join(root, file)
+                        logger.info(f"Processing Excel: {file}")
+                        text_content = extract_excel(file_path)
+                    else:
+                        continue
+
                     if text_content:
                         doc = Document(
                             page_content=text_content,

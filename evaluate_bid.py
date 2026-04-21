@@ -2,7 +2,7 @@ import argparse
 import logging
 import os
 from dotenv import load_dotenv
-from langchain_community.embeddings import OllamaEmbeddings
+from langchain_ollama import OllamaEmbeddings
 from langchain_postgres import PGVector
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Database configuration
-CONNECTION_STRING = "postgresql+psycopg2://admin:password@localhost:5444/tender_eval"
+CONNECTION_STRING = "postgresql+psycopg://admin:password@localhost:5444/tender_eval"
 COLLECTION_NAME = "bidder_documents"
 
 # Load environment variables
