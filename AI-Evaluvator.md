@@ -33,7 +33,7 @@ pgvector SIMILARITY SEARCH
 • Returns Top-K relevant text chunks
         │
         ▼
-LLM (Cloud – Temporary)
+LLM (On-Prem)
 • Receives only retrieved text
 • Performs reasoning & interpretation
 • Generates structured JSON output
