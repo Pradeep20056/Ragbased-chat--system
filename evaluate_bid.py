@@ -2,9 +2,8 @@ import argparse
 import logging
 import os
 from dotenv import load_dotenv
-from langchain_ollama import OllamaEmbeddings
+from langchain_ollama import OllamaEmbeddings, ChatOllama
 from langchain_postgres import PGVector
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 from models import PQEvaluationResult
 
@@ -43,11 +42,10 @@ def evaluate(query: str):
     context_text = "\n\n".join([doc.page_content for doc in retrieved_docs])
     logger.info(f"Retrieved {len(retrieved_docs)} chunks containing relevant context.")
     
-    # Initialize Cloud LLM (Google GenAI) Using Gemini 3 Flash
-    logger.info("Initializing Google GenAI LLM...")
-    llm = ChatGoogleGenerativeAI(
-        model="gemini-3-flash-preview",
-        google_api_key=os.getenv("GEMINI_API_KEY"),
+    # Initialize Local LLM (Ollama) Using Phi model
+    logger.info("Initializing Ollama (Phi) LLM...")
+    llm = ChatOllama(
+        model="phi",
         temperature=0
     )
     
@@ -64,15 +62,21 @@ def evaluate(query: str):
         
         Bidder Documentation Context:
         {context}
+        
+        IMPORTANT: Your output MUST strictly follow the provided structured format.
         """
     )
     
     formatted_prompt = prompt_template.format(query=query, context=context_text)
     
-    logger.info("Invoking Vertex AI LLM for reasoning and structured generation...")
+    logger.info("Invoking Ollama LLM for reasoning and structured generation...")
     try:
-        result: PQEvaluationResult = structured_llm.invoke(formatted_prompt)
+        result = structured_llm.invoke(formatted_prompt)
         
+        if result is None:
+            logger.error("LLM returned None. This usually happens if the model failed to generate a response in the required structured format.")
+            return
+
         logger.info("\n=== STRUCTURED JSON EVALUATION OUTPUT ===")
         print(result.model_dump_json(indent=4))
         logger.info("=========================================\n")

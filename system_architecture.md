@@ -4,7 +4,7 @@ This document outlines the technical architecture, data flow, and component inte
 
 ## Overview
 
-The system is a high-performance RAG (Retrieval-Augmented Generation) pipeline designed to analyze complex bidder offers (500+ page PDFs) and generate structured, audit-ready evaluation results. It leverages a hybrid approach: **local infrastructure** for privacy-sensitive data processing and **cloud-based reasoning** for advanced interpretation.
+The system is a high-performance RAG (Retrieval-Augmented Generation) pipeline designed to analyze complex bidder offers (500+ page PDFs) and generate structured, audit-ready evaluation results. It is built as a **fully local architecture** to ensure maximum data privacy, leveraging local embeddings and local LLM reasoning.
 
 ## Component Diagram
 
@@ -18,18 +18,12 @@ graph TD
         E -->|Vector Store| F[(PostgreSQL + pgvector)]
     end
 
-    subgraph "Evaluation Logic"
+    subgraph "Evaluation Logic (On-Prem)"
         G[User Query] -->|Similarity Search| F
         F -->|Top-K Context| H[Evaluation Engine]
-        H -->|Context + Prompt| I[LLM Reasoning]
+        H -->|Context + Prompt| I[Ollama Reasoning: Phi]
+        I -->|Structured JSON| K[PQ Evaluation JSON Result]
     end
-
-    subgraph "Cloud - Google Vertex AI"
-        I -->|API Call| J[Gemini 3 Flash Preview]
-        J -->|Structured JSON| I
-    end
-
-    I --> K[PQ Evaluation JSON Result]
 ```
 
 ## Technical Components
@@ -42,7 +36,7 @@ graph TD
 
 ### 2. Reasoning & Evaluation
 - **Orchestration**: Python-based engine using `LangChain` primitives for retrieval and prompt management.
-- **LLM Engine**: **Gemini 3 Flash (Preview)** via Google's Generative AI SDK, providing state-of-the-art reasoning with high throughput.
+- **LLM Engine**: **Ollama (Phi)** running locally. This ensures that the reasoning process and structured evaluation generation also occur within the private local environment.
 - **Structured Output**: **Pydantic** models enforce a strict JSON schema (`PQEvaluationResult`) for the LLM response, ensuring machine-readability for integration with local TMS.
 
 ### 3. Data Flow
@@ -53,12 +47,11 @@ graph TD
 5. **Generation**: Gemini generates a structured evaluation covering technical deviations, risks, and final recommendations.
 
 ## Security & Privacy
-- **Data Residency**: The primary text data and semantic vectors stay on the organization's local infrastructure.
-- **Cloud Minimalist**: Only the specific text chunks relevant to the query are sent to the cloud (Vertex AI) for reasoning, significantly reducing data exposure compared to uploading entire documents.
-- **Authentication**: Secured via Google Cloud API keys and environment-level project configurations.
+- **Data residency**: All data, including raw text, embeddings, and reasoning context, stays on the organization's local infrastructure.
+- **No Cloud Dependency**: By moving to a local LLM (Ollama Phi), the system eliminates data transfer to third-party cloud providers, significantly enhancing security.
+- **Authentication**: Vector store and local APIs are secured within the host network.
 
 ## Setup Requirements
 - **Docker**: For running the pgvector container.
-- **Ollama**: For running local embeddings.
+- **Ollama**: For running local embeddings (`nomic-embed-text`) and local reasoning (`phi`).
 - **Python 3.14+**: Current runtime environment.
-- **Google Cloud Project**: For Vertex AI / Gemini 3 access.

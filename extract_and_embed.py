@@ -47,52 +47,59 @@ def extract_excel(file_path):
     text = ""
     try:
         # Read all sheets
-        xl = pd.ExcelFile(file_path)
-        for sheet_name in xl.sheet_names:
-            df = xl.parse(sheet_name)
-            if not df.empty:
-                text += f"\nSheet: {sheet_name}\n"
-                # Convert sheet content to string (CSV-like format for LLM to understand rows)
-                text += df.to_csv(index=False, sep="\t")
+        with pd.ExcelFile(file_path) as xl:
+            for sheet_name in xl.sheet_names:
+                df = xl.parse(sheet_name)
+                if not df.empty:
+                    text += f"\nSheet: {sheet_name}\n"
+                    # Convert sheet content to string (CSV-like format for LLM to understand rows)
+                    text += df.to_csv(index=False, sep="\t")
     except Exception as e:
         logger.error(f"Excel extraction failed for {file_path}: {e}")
     return text
 
-def process_zip_file(zip_path: str):
-    """Extract zip and process documents."""
-    logger.info(f"Extracting {zip_path}")
-    extracted_docs = []
-    bidder_name = Path(zip_path).stem
-    
-    with tempfile.TemporaryDirectory() as temp_dir:
-        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-            zip_ref.extractall(temp_dir)
-            
-        for root, dirs, files in os.walk(temp_dir):
-            for file in files:
-                    if file.lower().endswith('.pdf'):
-                        file_path = os.path.join(root, file)
-                        logger.info(f"Processing PDF: {file}")
-                        text_content = extract_text(file_path)
-                    elif file.lower().endswith(('.xlsx', '.xls')):
-                        file_path = os.path.join(root, file)
-                        logger.info(f"Processing Excel: {file}")
-                        text_content = extract_excel(file_path)
-                    else:
-                        continue
+def process_input(path: str):
+    """Process either a zip file or a directory."""
+    if os.path.isdir(path):
+        logger.info(f"Processing directory: {path}")
+        return process_directory(path, Path(path).stem)
+    elif zipfile.is_zipfile(path):
+        logger.info(f"Extracting and processing zip: {path}")
+        with tempfile.TemporaryDirectory() as temp_dir:
+            with zipfile.ZipFile(path, 'r') as zip_ref:
+                zip_ref.extractall(temp_dir)
+            return process_directory(temp_dir, Path(path).stem)
+    else:
+        logger.error(f"Unsupported file type: {path}")
+        return []
 
-                    if text_content:
-                        doc = Document(
-                            page_content=text_content,
-                            metadata={"bidder": bidder_name, "source": file}
-                        )
-                        extracted_docs.append(doc)
-                        
+def process_directory(directory: str, bidder_name: str):
+    """Process documents in a directory."""
+    extracted_docs = []
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            file_path = os.path.join(root, file)
+            if file.lower().endswith('.pdf'):
+                logger.info(f"Processing PDF: {file}")
+                text_content = extract_text(file_path)
+            elif file.lower().endswith(('.xlsx', '.xls')):
+                logger.info(f"Processing Excel: {file}")
+                text_content = extract_excel(file_path)
+            else:
+                continue
+
+            if text_content:
+                doc = Document(
+                    page_content=text_content,
+                    metadata={"bidder": bidder_name, "source": file}
+                )
+                extracted_docs.append(doc)
     return extracted_docs
 
-def embed_and_store(documents: list):
+def embed_and_store(documents: list, clear_existing: bool = True):
     """Store chunks in PostgreSQL."""
     if not documents:
+        logger.warning("No documents to process.")
         return
         
     logger.info("Splitting text...")
@@ -107,14 +114,15 @@ def embed_and_store(documents: list):
         documents=chunks,
         collection_name=COLLECTION_NAME,
         connection=CONNECTION_STRING,
-        pre_delete_collection=False
+        pre_delete_collection=clear_existing
     )
     logger.info("Done.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("zip_path")
+    parser.add_argument("path", help="Path to zip file or directory")
+    parser.add_argument("--append", action="store_true", help="Append to existing collection instead of clearing it")
     args = parser.parse_args()
     
-    docs = process_zip_file(args.zip_path)
-    embed_and_store(docs)
+    docs = process_input(args.path)
+    embed_and_store(docs, clear_existing=not args.append)
