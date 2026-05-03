@@ -217,21 +217,109 @@ function renderChunk(chunk, idx, container) {
   card.className = 'chunk-card';
   card.style.animationDelay = `${idx * 45}ms`;
 
-  const header = document.createElement('div');
-  header.className = 'chunk-header';
-  header.innerHTML = `
-    <span class="chunk-num">${chunk.index}</span>
-    <span class="chunk-source" title="${chunk.source}">📄 ${chunk.source}</span>
-    <span class="chunk-bidder">${chunk.bidder}</span>
+  // Determine page badge label
+  const pageLabel = (chunk.page !== undefined && chunk.page !== null && chunk.page !== 'N/A')
+    ? `Page ${chunk.page}` : 'N/A';
+
+  // Truncate source filename for display
+  const srcShort = chunk.source.length > 32
+    ? '…' + chunk.source.slice(-30) : chunk.source;
+
+  // Char count display
+  const charCount = chunk.chars ? `${chunk.chars.toLocaleString()} chars` : '';
+
+  // Content preview (first 280 chars)
+  const previewLen = 280;
+  const fullText   = chunk.content.trim();
+  const isLong     = fullText.length > previewLen;
+  const preview    = isLong ? fullText.slice(0, previewLen) + '…' : fullText;
+
+  const chunkId = `chunk-${chunk.index}-${idx}`;
+
+  card.innerHTML = `
+    <div class="chunk-header">
+      <div class="chunk-header-left">
+        <span class="chunk-rank">#${chunk.index}</span>
+        <div class="chunk-meta-group">
+          <span class="chunk-page-badge" title="PDF page number">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            ${pageLabel}
+          </span>
+          <span class="chunk-file" title="${chunk.source}">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            ${srcShort}
+          </span>
+          ${charCount ? `<span class="chunk-chars">${charCount}</span>` : ''}
+        </div>
+      </div>
+      <div class="chunk-header-right">
+        <button class="chunk-copy-btn" title="Copy chunk text" onclick="copyChunk('${chunkId}')">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copy
+        </button>
+      </div>
+    </div>
+
+    <div class="chunk-content" id="${chunkId}">${escHtml(fullText)}</div>
+
+    ${isLong ? `
+    <div class="chunk-toggle-row">
+      <button class="chunk-toggle-btn" onclick="toggleChunk(this, '${chunkId}', ${JSON.stringify(preview).replace(/"/g, '&quot;')}, ${JSON.stringify(fullText).replace(/"/g, '&quot;')})">
+        <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        Show less
+      </button>
+    </div>
+    ` : ''}
   `;
 
-  const content = document.createElement('div');
-  content.className = 'chunk-content';
-  content.textContent = chunk.content.trim();
+  // Start collapsed if long
+  if (isLong) {
+    const contentEl = card.querySelector(`#${chunkId}`);
+    contentEl.textContent = preview;
+    const toggleBtn = card.querySelector('.chunk-toggle-btn');
+    if (toggleBtn) {
+      toggleBtn.querySelector('.toggle-icon').style.transform = 'rotate(-90deg)';
+      toggleBtn.childNodes[1].textContent = ' Show more';
+    }
+  }
 
-  card.appendChild(header);
-  card.appendChild(content);
   container.appendChild(card);
+}
+
+function escHtml(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function toggleChunk(btn, id, preview, full) {
+  const el = document.getElementById(id);
+  const icon = btn.querySelector('.toggle-icon');
+  if (el.dataset.expanded === 'true') {
+    el.textContent = preview;
+    el.dataset.expanded = 'false';
+    icon.style.transform = 'rotate(-90deg)';
+    btn.childNodes[1].textContent = ' Show more';
+  } else {
+    el.textContent = full;
+    el.dataset.expanded = 'true';
+    icon.style.transform = 'rotate(0deg)';
+    btn.childNodes[1].textContent = ' Show less';
+  }
+}
+
+async function copyChunk(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  try {
+    await navigator.clipboard.writeText(el.textContent);
+    // Flash feedback
+    const btn = el.closest('.chunk-card').querySelector('.chunk-copy-btn');
+    btn.textContent = '✓ Copied';
+    btn.style.color = 'var(--green, #22c55e)';
+    setTimeout(() => {
+      btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy`;
+      btn.style.color = '';
+    }, 1800);
+  } catch {}
 }
 
 /* ── UI state helpers ───────────────────────────────────── */

@@ -254,6 +254,8 @@ def evaluate_section(section_id: str) -> Any:
             "index":   i + 1,
             "source":  doc.metadata.get("source", "Unknown"),
             "bidder":  doc.metadata.get("bidder", "Unknown"),
+            "page":    doc.metadata.get("page", "N/A"),
+            "chars":   len(doc.page_content),
             "content": doc.page_content,
         })
 

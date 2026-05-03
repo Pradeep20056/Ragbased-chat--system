@@ -29,17 +29,19 @@ logger = logging.getLogger(__name__)
 CONNECTION_STRING = "postgresql+psycopg://admin:password@localhost:5444/tender_eval"
 COLLECTION_NAME = "bidder_documents"
 
-def extract_text(file_path):
-    """Extract text using PyMuPDF (lighter and faster than Docling OCR)."""
-    logger.info(f"Extracting text with PyMuPDF: {file_path}")
-    text = ""
+def extract_text_per_page(file_path):
+    """Extract text per page from a PDF using PyMuPDF. Returns list of (page_num, text) tuples."""
+    logger.info(f"Extracting text with PyMuPDF (per-page): {file_path}")
+    pages = []
     try:
         with fitz.open(file_path) as doc:
-            for page in doc:
-                text += page.get_text()
+            for page_num, page in enumerate(doc, start=1):
+                text = page.get_text().strip()
+                if text:
+                    pages.append((page_num, text))
     except Exception as e:
         logger.error(f"PyMuPDF failed for {file_path}: {e}")
-    return text
+    return pages
 
 def extract_excel(file_path):
     """Extract content from Excel files and convert to text representation."""
@@ -79,21 +81,35 @@ def process_directory(directory: str, bidder_name: str):
     for root, dirs, files in os.walk(directory):
         for file in files:
             file_path = os.path.join(root, file)
+
             if file.lower().endswith('.pdf'):
                 logger.info(f"Processing PDF: {file}")
-                text_content = extract_text(file_path)
+                pages = extract_text_per_page(file_path)
+                for page_num, page_text in pages:
+                    doc = Document(
+                        page_content=page_text,
+                        metadata={
+                            "bidder": bidder_name,
+                            "source": file,
+                            "page": page_num,
+                        }
+                    )
+                    extracted_docs.append(doc)
+
             elif file.lower().endswith(('.xlsx', '.xls')):
                 logger.info(f"Processing Excel: {file}")
                 text_content = extract_excel(file_path)
-            else:
-                continue
+                if text_content:
+                    doc = Document(
+                        page_content=text_content,
+                        metadata={
+                            "bidder": bidder_name,
+                            "source": file,
+                            "page": "N/A",
+                        }
+                    )
+                    extracted_docs.append(doc)
 
-            if text_content:
-                doc = Document(
-                    page_content=text_content,
-                    metadata={"bidder": bidder_name, "source": file}
-                )
-                extracted_docs.append(doc)
     return extracted_docs
 
 def embed_and_store(documents: list, clear_existing: bool = True):
