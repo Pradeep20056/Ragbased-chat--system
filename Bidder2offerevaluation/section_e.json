@@ -1,12 +1,12 @@
 {
-    "technical_specification_signed_and_sealed": "true",
-    "nil_deviation_statement_signed_and_sealed": "false",
-    "additional_user_department_requirement": "none",
-    "deviations": [
-        "The flame height is slightly higher than the specified range, but within acceptable limits.",
-        "The ignition delay time is longer than expected due to environmental factors."
+    "technical_specification_signed_and_sealed": "Not Found",
+    "nil_deviation_statement_signed_and_sealed": "Not Found",
+    "additional_user_department_requirement": "None",
+    "deviations": [],
+    "query_to_be_raised": [
+        "Bidder to provide the Technical Specification document duly signed and sealed.",
+        "Bidder to provide the NIL Deviation Statement duly signed and sealed as per the tender format."
     ],
-    "query_to_be_raised": [],
-    "technical_evaluation_status": "completed",
-    "reason_for_rejection": "none"
+    "technical_evaluation_status": "Query to be raised",
+    "reason_for_rejection": "Not Applicable"
 }

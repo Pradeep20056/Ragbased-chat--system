@@ -1,19 +1,22 @@
 {
-    "similar_nature_of_job": "The job involves designing, developing, and maintaining high-energy pulse arc (HEA) igniter systems for various fuels. The systems are designed to produce intense electrical sparks that ignite oil/gaseous particles, creating a flame pocket in the oil spray.",
-    "value_of_work_order_required": "The value of work or order required is not specified in the given text.",
-    "details_of_work_order_submitted": "The details of the work order submitted include the design and development of HEA igniter systems for various fuels, including high-speed diesel, heavy fuel oils, and gases. The systems are designed to produce intense electrical sparks that ignite oil/gaseous particles, creating a flame pocket in the oil spray.",
-    "work_order_number_and_date": "The work order number and date are not specified in the given text.",
-    "nature_of_industry": "The industry is related to energy and industrial applications.",
-    "name_of_issuer": "Hindusthan Thermometers",
-    "completion_certificate_details": "Completion certificate details are not provided in the given text.",
-    "executed_value_as_per_completion_certificate": "Executed value as per completion certificate is not provided in the given text.",
-    "value_considered_for_technical_evaluation": "The value considered for technical evaluation is not specified in the given text.",
-    "annualization_of_value": "Annualization of value is not applicable as it's a one-time project.",
-    "subcontract_approval_submitted": "Subcontract approval submitted details are not provided in the given text.",
-    "work_order_meeting_experience_criteria": "Work order meeting experience criteria details are not provided in the given text.",
-    "additional_technical_pqc": "Additional technical PQC details are not provided in the given text.",
+    "similar_nature_of_job": "Manufacture, supply, and installation of High Energy Igniter (HEA) systems, flame scanners, and burner components for thermal power plants and oil refineries.",
+    "value_of_work_order_required": "Not Found in Documents",
+    "details_of_work_order_submitted": "Not Found in Documents",
+    "work_order_number_and_date": "Not Found in Documents",
+    "nature_of_industry": "Petroleum / Petrochemical / Power / Refinery",
+    "name_of_issuer": "Not Found in Documents",
+    "completion_certificate_details": "Not Found in Documents",
+    "executed_value_as_per_completion_certificate": "Not Found in Documents",
+    "value_considered_for_technical_evaluation": "Not Found in Documents",
+    "annualization_of_value": "Not Applicable",
+    "subcontract_approval_submitted": "Not Applicable",
+    "work_order_meeting_experience_criteria": "Not Found in Documents",
+    "additional_technical_pqc": "None",
     "deviations": [],
-    "query_to_be_raised": [],
-    "technical_acceptance_status": "Technical acceptance status is not provided in the given text.",
-    "reason_for_rejection": "Reason for rejection is not provided in the given text."
+    "query_to_be_raised": [
+        "The bidder has submitted a product catalog and Udyam registration but has not provided specific Work Orders or Completion Certificates to demonstrate meeting the experience criteria.",
+        "Please submit Work Orders and corresponding Completion Certificates for similar nature of jobs as per the NIT requirements."
+    ],
+    "technical_acceptance_status": "Under Query",
+    "reason_for_rejection": "Not Applicable"
 }

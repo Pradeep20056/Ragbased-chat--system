@@ -1,11 +1,13 @@
 {
-    "annual_turnover_applicable": "Yes",
-    "annual_turnover_2021_22": "50000000",
-    "annual_turnover_2022_23": "60000000",
-    "annual_turnover_2023_24": "70000000",
-    "positive_networth_for_latest_fy": "Yes",
-    "networth_value": "15000000",
-    "queries_to_be_raised": [],
-    "pq_financial_status": "Yes",
-    "reason_for_rejection": ""
+    "annual_turnover_applicable": "Not Found in Documents",
+    "annual_turnover_2021_22": "Not Found in Documents",
+    "annual_turnover_2022_23": "Not Found in Documents",
+    "annual_turnover_2023_24": "Not Found in Documents",
+    "positive_networth_for_latest_fy": "Not Found in Documents",
+    "networth_value": "Not Found in Documents",
+    "queries_to_be_raised": [
+        "The bidder has submitted only ITR Acknowledgements which reflect 'Total Income'. Please provide the Audited Profit & Loss Statements and Balance Sheets for FY 2021-22, FY 2022-23, and FY 2023-24 to verify the Annual Turnover and Net Worth as per the PQ criteria."
+    ],
+    "pq_financial_status": "Query to be raised",
+    "reason_for_rejection": "Not Applicable"
 }

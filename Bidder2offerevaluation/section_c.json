@@ -1,17 +1,20 @@
 {
-    "po_item_description": "High Energy Ignition Module",
-    "po_number": "1234567890",
-    "po_acceptable_date": "2023-12-31",
-    "po_value": "1000.00",
-    "po_issuer_name": "John Doe",
-    "po_receiver_name": "Jane Smith",
-    "po_issuer_type_of_industry": "Manufacturing",
-    "po_supplied_value": "950.00",
-    "proof_of_supply": "Yes",
-    "supplied_within_india": "Yes",
-    "commissioned": "Yes",
-    "additional_pqc": "No",
-    "queries_to_be_raised": [],
-    "pqc_experience_status": "Completed",
-    "reason_for_rejection": "None"
+    "po_item_description": "Not Found in Documents",
+    "po_number": "Not Found in Documents",
+    "po_acceptable_date": "Not Found in Documents",
+    "po_value": "Not Found in Documents",
+    "po_issuer_name": "Not Found in Documents",
+    "po_receiver_name": "Hindusthan Thermometers",
+    "po_issuer_type_of_industry": "Not Found in Documents",
+    "po_supplied_value": "Not Found in Documents",
+    "proof_of_supply": "Not Found in Documents",
+    "supplied_within_india": "Not Found in Documents",
+    "commissioned": "Not Found in Documents",
+    "additional_pqc": "Not Applicable",
+    "queries_to_be_raised": [
+        "The bidder has submitted a product catalogue and company profile but has not provided specific Purchase Orders (POs) to demonstrate meeting the PQ Experience Criteria.",
+        "Please provide copies of Purchase Orders along with proof of supply (GST Invoices/Completion Certificates) as required by the tender."
+    ],
+    "pqc_experience_status": "Query to be raised",
+    "reason_for_rejection": "Not Applicable"
 }

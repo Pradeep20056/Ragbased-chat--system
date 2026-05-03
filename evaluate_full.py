@@ -279,7 +279,9 @@ def get_llm():
     if gcp_location == "global": gcp_location = "us-central1"
     
     # ── 1. Vertex AI via API Key ──────────────────────────────
-    if gcp_project and api_key:
+    use_vertexai = os.getenv("GEMINI_USE_VERTEXAI", "false").lower() == "true"
+    
+    if use_vertexai and gcp_project and api_key:
         try:
             from langchain_google_vertexai import ChatVertexAI
             logger.info(f"[LLM] Using {model_id} via Vertex AI + API Key (project={gcp_project})")

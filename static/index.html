@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tender Evaluation AI — RAG Demo</title>
+  <meta name="description" content="Interactive demonstration of the AI-powered RAG tender evaluation system for CPCL bidder analysis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────────── -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="url(#grad)"/>
+            <path d="M8 22L14 10L20 18L24 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="24" cy="12" r="2" fill="white"/>
+            <defs>
+              <linearGradient id="grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366f1"/>
+                <stop offset="1" stop-color="#0ea5e9"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">Tender Evaluation AI</h1>
+          <p class="brand-sub">RAG-Powered Bidder Analysis — CPCL</p>
+        </div>
+      </div>
+      <div class="header-meta" id="llmBadge" style="display:none">
+        <span class="badge badge-green" id="llmLabel">LLM Active</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Main layout ────────────────────────────────────────── -->
+  <main class="main-layout">
+
+    <!-- Sidebar: section selector -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-title">Evaluation Sections</span>
+        <span class="sidebar-hint">Select a section to run</span>
+      </div>
+      <nav class="section-list" id="sectionList">
+        <!-- Populated by JS -->
+        <div class="skeleton-block" style="height:52px;margin-bottom:8px"></div>
+        <div class="skeleton-block" style="height:52px;margin-bottom:8px"></div>
+        <div class="skeleton-block" style="height:52px;margin-bottom:8px"></div>
+        <div class="skeleton-block" style="height:52px;margin-bottom:8px"></div>
+        <div class="skeleton-block" style="height:52px;margin-bottom:8px"></div>
+        <div class="skeleton-block" style="height:52px"></div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="btn-primary" id="runBtn" disabled>
+          <span class="btn-icon">▶</span>
+          <span id="runBtnText">Select a Section</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Content area: split into results + chunks -->
+    <section class="content-area">
+
+      <!-- Empty state -->
+      <div class="empty-state" id="emptyState">
+        <div class="empty-icon">🔍</div>
+        <h2>Select a section and click Run</h2>
+        <p>The AI will retrieve relevant document chunks from the vector database and extract structured data. You'll see both the <strong>retrieved evidence</strong> and the <strong>extracted fields</strong> side by side.</p>
+        <div class="workflow-steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-label">Query Vector DB</div>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-label">Retrieve Chunks</div>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-label">LLM Extracts</div>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-label">Structured Output</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading state -->
+      <div class="loading-state" id="loadingState" style="display:none">
+        <div class="loader-ring"></div>
+        <h2 id="loadingTitle">Running Evaluation...</h2>
+        <div class="loading-steps" id="loadingSteps">
+          <div class="lstep active" id="ls1">
+            <span class="lstep-dot"></span>
+            <span>Connecting to vector database</span>
+          </div>
+          <div class="lstep" id="ls2">
+            <span class="lstep-dot"></span>
+            <span>Retrieving relevant document chunks</span>
+          </div>
+          <div class="lstep" id="ls3">
+            <span class="lstep-dot"></span>
+            <span>Sending context to LLM</span>
+          </div>
+          <div class="lstep" id="ls4">
+            <span class="lstep-dot"></span>
+            <span>Extracting structured fields</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results split pane -->
+      <div class="results-pane" id="resultsPane" style="display:none">
+
+        <!-- Top: stats bar -->
+        <div class="stats-bar" id="statsBar">
+          <div class="stat-chip" id="statSection"></div>
+          <div class="stat-chip" id="statChunks"></div>
+          <div class="stat-chip" id="statFields"></div>
+          <div class="stat-chip" id="statLlm"></div>
+        </div>
+
+        <!-- Two column split -->
+        <div class="split-columns">
+
+          <!-- LEFT: Extracted Fields -->
+          <div class="col col-results">
+            <div class="col-header">
+              <div class="col-title-row">
+                <span class="col-dot col-dot-blue"></span>
+                <span class="col-title">Extracted Data</span>
+              </div>
+              <span class="col-sub">AI-structured output from LLM</span>
+            </div>
+            <div class="fields-container" id="fieldsContainer">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- RIGHT: Retrieved Chunks -->
+          <div class="col col-chunks">
+            <div class="col-header">
+              <div class="col-title-row">
+                <span class="col-dot col-dot-amber"></span>
+                <span class="col-title">Retrieved Evidence</span>
+              </div>
+              <span class="col-sub">Document chunks fetched from vector DB</span>
+            </div>
+            <div class="chunks-container" id="chunksContainer">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Error state -->
+      <div class="error-state" id="errorState" style="display:none">
+        <div class="error-icon">⚠️</div>
+        <h2 id="errorTitle">Something went wrong</h2>
+        <p id="errorMsg"></p>
+        <button class="btn-secondary" onclick="resetUI()">Try Again</button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <span>RAG-Based Tender Evaluation System · CPCL · Built with LangChain + pgvector + Gemini</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
