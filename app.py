@@ -20,6 +20,15 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 
+from models import (
+    ContractsTechEvaluation,
+    ContractsCommercialEvaluation,
+    MaterialsPQExperience,
+    MaterialsPQFinancial,
+    MaterialsTechnicalEvaluation,
+    MaterialsCommercialEvaluation,
+)
+
 load_dotenv()
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -34,6 +43,7 @@ EVALUATIONS = [
     {
         "id":     "a",
         "label":  "(a) PQC Exp. & Technical Evaluation (Contracts)",
+        "schema": ContractsTechEvaluation,
         "search_query": "work order experience criteria technical qualification completion certificate executed value industry petroleum petrochemical",
         "instruction": """
 You must fill EVERY field below from the bidder's submitted documents.
@@ -63,6 +73,7 @@ RULE: If a value is not found in the context, write "Not Found in Documents" —
     {
         "id":     "b",
         "label":  "(b) PQC Fin. & Commercial Evaluation (Contracts)",
+        "schema": ContractsCommercialEvaluation,
         "search_query": "annual turnover financial statements networth EPF ESI EMD formats submission MSE MII blacklisting commercial evaluation",
         "instruction": """
 You must fill EVERY field below from the bidder's submitted documents.
@@ -86,6 +97,7 @@ RULE: If a value is not found in the context, write "Not Found in Documents" —
     {
         "id":     "c",
         "label":  "(c) Materials - PQ Experience Criteria",
+        "schema": MaterialsPQExperience,
         "search_query": "purchase order PO supply experience criteria GST invoice delivery challan commissioning proof of supply materials",
         "instruction": """
 You must fill EVERY field below from the bidder's submitted documents.
@@ -105,6 +117,7 @@ RULE: If a value is not found in the context, write "Not Found in Documents" —
     {
         "id":     "d",
         "label":  "(d) Materials - PQ Financial Criteria",
+        "schema": MaterialsPQFinancial,
         "search_query": "annual turnover balance sheet networth financial year 2021 2022 2023 2024 profit loss reserves capital",
         "instruction": """
 You must fill EVERY field below from the bidder's submitted financial documents.
@@ -122,6 +135,7 @@ RULE: If a value is not found in the context, write "Not Found in Documents" —
     {
         "id":     "e",
         "label":  "(e) Materials - Technical Evaluation",
+        "schema": MaterialsTechnicalEvaluation,
         "search_query": "technical specification signed sealed NIL deviation statement technical compliance user department requirement",
         "instruction": """
 You must fill EVERY field below from the bidder's submitted documents.
@@ -139,6 +153,7 @@ RULE: If a value is not found in the context, write "Not Found in Documents" —
     {
         "id":     "f",
         "label":  "(f) Materials - Commercial Evaluation (CBA)",
+        "schema": MaterialsCommercialEvaluation,
         "search_query": "vendor code contact person email mobile EMD MSE UDYAM MII local content GST blacklisting integrity pact deviations validity declarations",
         "instruction": """
 You must fill EVERY field below from the bidder's submitted documents.
@@ -237,10 +252,63 @@ def evaluate_section(section_id: str) -> Any:
     if not section:
         raise HTTPException(status_code=404, detail=f"Section '{section_id}' not found.")
 
-    # ── Step 1: Retrieve chunks from vector DB ────────────────
+    # ── Step 1: Multi-query retrieval from vector DB ─────────────
+    # A single query misses many fields (EPF, ESI, formats, integrity pact
+    # don't rank high in a broad financial-turnover query).
+    # We run multiple targeted sub-queries and deduplicate by content hash.
+    EXTRA_QUERIES = {
+        "a": [
+            "work order number date nature industry issuer name",
+            "completion certificate executed value annualization subcontract",
+            "experience criteria technical acceptance rejection deviation query",
+        ],
+        "b": [
+            "integrity pact EMD bank guarantee finance",
+            "EPF ESI registration code number",
+            "Format A B C D E F G H I J K appendix power of attorney",
+            "MSE UDYAM micro small medium MII blacklisting SAP CPPP corrigendum",
+            "share capital reserve surplus loss networth balance sheet",
+        ],
+        "c": [
+            "purchase order PO number date item description value issuer",
+            "GST invoice delivery challan commissioned supply within india",
+        ],
+        "d": [
+            "annual turnover balance sheet networth financial year profit loss",
+            "2021 2022 2023 2024 turnover revenue",
+        ],
+        "e": [
+            "technical specification signed sealed NIL deviation statement",
+            "user department indenter additional requirement",
+        ],
+        "f": [
+            "vendor code contact person mobile email GST registration",
+            "EMD MSE UDYAM MII local content integrity pact validity",
+            "holiday listing blacklisting land border declaration",
+        ],
+    }
+
     try:
         vectorstore = get_vectorstore()
-        docs = vectorstore.similarity_search(section["search_query"], k=12)
+        seen_hashes = set()
+        all_docs    = []
+
+        def _add_docs(results):
+            for d in results:
+                h = hash(d.page_content[:200])
+                if h not in seen_hashes:
+                    seen_hashes.add(h)
+                    all_docs.append(d)
+
+        # Primary query — retrieve more candidates
+        _add_docs(vectorstore.similarity_search(section["search_query"], k=20))
+
+        # Section-specific sub-queries
+        for sq in EXTRA_QUERIES.get(section_id, []):
+            _add_docs(vectorstore.similarity_search(sq, k=10))
+
+        docs = all_docs[:30]   # cap at 30 to keep prompt manageable
+
     except Exception as exc:
         raise HTTPException(status_code=503, detail=f"Vector DB error: {exc}")
 
@@ -261,27 +329,35 @@ def evaluate_section(section_id: str) -> Any:
 
     context_text = "\n\n".join(d.page_content for d in docs)
 
-    # ── Step 2: Build prompt ──────────────────────────────────
-    prompt = f"""You are an expert Tender Evaluation AI Agent working for CPCL (Chennai Petroleum Corporation Limited).
+    from langchain_core.prompts import PromptTemplate
+    PROMPT_TEMPLATE = PromptTemplate.from_template(
+        """You are an expert Tender Evaluation AI Agent working for CPCL (Chennai Petroleum Corporation Limited).
 
-Evaluation Section: {section['label']}
+Evaluation Section: {section_label}
 
 TASK — Fill every single field listed below. For each field:
 - If found in the documents, extract the exact value.
 - If NOT found, write "Not Found in Documents".
 - Never leave a field empty.
 
-{section['instruction']}
+{instruction}
 
 Bidder Documentation Context (retrieved from submitted documents):
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-{context_text}
+{context}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-CRITICAL: Respond with ONLY a valid JSON object. Fill ALL fields. No markdown, no explanations.
+CRITICAL: Your output MUST be in the exact structured format. Fill ALL fields.
 """
+    )
 
-    # ── Step 3: Call LLM with Full Fallback Chain ─────────────────
+    formatted_prompt = PROMPT_TEMPLATE.format(
+        section_label=section["label"],
+        instruction=section["instruction"],
+        context=context_text,
+    )
+
+    # ── Step 3: Call LLM with structured output (same as evaluate_full.py) ────
     api_key      = os.getenv("GEMINI_API_KEY", "")
     model_id     = os.getenv("MODEL_ID", "gemini-3-flash-preview")
     gcp_project  = os.getenv("GOOGLE_CLOUD_PROJECT", "")
@@ -290,62 +366,74 @@ CRITICAL: Respond with ONLY a valid JSON object. Fill ALL fields. No markdown, n
         gcp_location = "us-central1"
     use_vertexai = os.getenv("GEMINI_USE_VERTEXAI", "false").lower() == "true"
 
-    raw_text  = None
+    schema    = section["schema"]
+    result    = None
     llm_label = "Unknown"
     errors    = []
 
-    # Priority 1: Vertex AI via API Key
-    if use_vertexai and gcp_project and api_key:
+    def _try_structured(llm, label):
+        """Try with_structured_output first, fall back to raw invoke + JSON parse."""
+        nonlocal result, llm_label
+        try:
+            structured_llm = llm.with_structured_output(schema)
+            result    = structured_llm.invoke(formatted_prompt)
+            llm_label = label
+            logger.info(f"[LLM] Structured output succeeded via {label}")
+            return True
+        except Exception as e1:
+            logger.warning(f"[LLM] Structured output failed for {label}: {e1}. Trying raw invoke...")
+        # Raw fallback: ask for JSON text and parse manually
+        try:
+            raw_resp  = _extract_text(llm.invoke(formatted_prompt + "\nRespond with ONLY valid JSON."))
+            json_match = re.search(r"\{.*\}", raw_resp.strip(), re.DOTALL)
+            if json_match:
+                result    = json.loads(json_match.group())
+                llm_label = label + " (raw JSON)"
+                return True
+        except Exception as e2:
+            logger.warning(f"[LLM] Raw invoke also failed for {label}: {e2}")
+            errors.append(f"{label}: {e2}")
+        return False
+
+    # Priority 1: Vertex AI
+    if use_vertexai and gcp_project and api_key and result is None:
         try:
             from langchain_google_vertexai import ChatVertexAI
-            logger.info(f"[LLM] Trying {model_id} via Vertex AI (project={gcp_project})")
             llm = ChatVertexAI(model=model_id, api_key=api_key, project=gcp_project, location=gcp_location, temperature=0)
-            response  = llm.invoke(prompt)
-            raw_text  = _extract_text(response)
-            llm_label = f"{model_id} (Vertex AI)"
+            _try_structured(llm, f"{model_id} (Vertex AI)")
         except Exception as e:
-            logger.warning(f"[LLM] Vertex AI failed: {e}")
-            errors.append(f"Vertex AI: {e}")
+            errors.append(f"Vertex AI init: {e}")
 
-    # Priority 2: Google AI Studio (direct API key)
-    if not raw_text and api_key:
+    # Priority 2: Google AI Studio
+    if api_key and result is None:
         try:
             from langchain_google_genai import ChatGoogleGenerativeAI
-            logger.info(f"[LLM] Trying {model_id} via Google AI Studio")
             llm = ChatGoogleGenerativeAI(model=model_id, google_api_key=api_key, temperature=0)
-            response  = llm.invoke(prompt)
-            raw_text  = _extract_text(response)
-            llm_label = f"{model_id} (Google AI Studio)"
+            _try_structured(llm, f"{model_id} (Google AI Studio)")
         except Exception as e:
-            logger.warning(f"[LLM] Google AI Studio failed: {e}")
-            errors.append(f"Google AI Studio ({model_id}): {e}")
+            errors.append(f"Google AI Studio init: {e}")
 
-    # Priority 3: Ollama local fallback (only if a chat model is available)
-    if not raw_text:
+    # Priority 3: Ollama
+    if result is None:
         try:
             import httpx
-            ollama_models_resp = httpx.get("http://localhost:11434/api/tags", timeout=5)
-            available = [m["name"] for m in ollama_models_resp.json().get("models", [])]
-            chat_models = [m for m in available if "embed" not in m.lower()]
+            tags = httpx.get("http://localhost:11434/api/tags", timeout=5).json()
+            chat_models = [m["name"] for m in tags.get("models", []) if "embed" not in m["name"]]
             if chat_models:
-                ollama_model = chat_models[0]
                 from langchain_ollama import ChatOllama
-                logger.info(f"[LLM] Trying Ollama model: {ollama_model}")
-                llm = ChatOllama(model=ollama_model, temperature=0)
-                response  = llm.invoke(prompt)
-                raw_text  = _extract_text(response)
-                llm_label = f"Ollama {ollama_model} (local)"
+                # Use format="json" for native Ollama speed/reliability on CPU
+                llm = ChatOllama(model=chat_models[0], temperature=0, format="json")
+                _try_structured(llm, f"Ollama {chat_models[0]}")
             else:
-                errors.append("Ollama: No local chat models installed. Only embedding models found.")
+                errors.append("Ollama: No local chat models installed.")
         except Exception as e:
-            logger.warning(f"[LLM] Ollama failed: {e}")
             errors.append(f"Ollama: {e}")
 
-    if not raw_text:
+    if result is None:
         extracted = {
             "error": "All LLMs in the priority chain failed.",
             "details": " | ".join(errors),
-            "hint": f"Your API key quota for '{model_id}' may be exhausted. Try changing MODEL_ID in .env to another model (e.g. gemini-1.5-flash), or install a local Ollama chat model."
+            "hint": f"Quota for '{model_id}' may be exhausted. Try changing MODEL_ID in .env (e.g. gemini-1.5-flash)."
         }
         return JSONResponse({
             "section_id":      section_id,
@@ -356,54 +444,23 @@ CRITICAL: Respond with ONLY a valid JSON object. Fill ALL fields. No markdown, n
             "extracted":       extracted,
         })
 
-    # Log the raw response so it's visible in the server terminal
-    logger.info(f"[LLM] Raw response ({len(raw_text)} chars): {raw_text[:500]!r}")
+    # Serialise: Pydantic model → dict, or pass dict directly
+    if hasattr(result, "model_dump"):
+        extracted = result.model_dump()
+    elif isinstance(result, dict):
+        extracted = result
+    else:
+        extracted = {"raw": str(result)}
 
-    extracted = None
-
-    # Strategy 1: Strip markdown code fences (```json ... ``` or ``` ... ```)
-    clean_text = raw_text.strip()
-    fence_match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", clean_text, re.DOTALL)
-    if fence_match:
-        try:
-            extracted = json.loads(fence_match.group(1))
-            logger.info("[LLM] Parsed JSON via markdown fence extraction.")
-        except Exception:
-            pass
-
-    # Strategy 2: Direct JSON parse (entire response is valid JSON)
-    if extracted is None:
-        try:
-            extracted = json.loads(clean_text)
-            logger.info("[LLM] Parsed JSON via direct parse.")
-        except Exception:
-            pass
-
-    # Strategy 3: Greedy regex — find outermost { ... }
-    if extracted is None:
-        json_match = re.search(r"\{.*\}", clean_text, re.DOTALL)
-        if json_match:
-            try:
-                extracted = json.loads(json_match.group())
-                logger.info("[LLM] Parsed JSON via greedy regex.")
-            except Exception:
-                pass
-
-    if extracted is None:
-        logger.warning(f"[LLM] Could not parse JSON. Full raw text: {raw_text!r}")
-        extracted = {
-            "error": "JSON Parse Error — model did not return valid JSON.",
-            "raw_response": raw_text,
-            "hint": "The model may have returned an explanation instead of JSON. Check the server logs for the full response."
-        }
+    logger.info(f"[LLM] Extraction complete via {llm_label}: {len(extracted)} fields")
 
     return JSONResponse({
-        "section_id":  section_id,
-        "section_label": section["label"],
-        "llm_used":    llm_label,
+        "section_id":      section_id,
+        "section_label":   section["label"],
+        "llm_used":        llm_label,
         "chunks_retrieved": len(chunks),
-        "chunks":      chunks,
-        "extracted":   extracted,
+        "chunks":          chunks,
+        "extracted":       extracted,
     })
 
 # ── Serve static frontend ─────────────────────────────────────

@@ -119,7 +119,7 @@ def embed_and_store(documents: list, clear_existing: bool = True):
         return
         
     logger.info("Splitting text...")
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=400)
     chunks = text_splitter.split_documents(documents)
     
     logger.info(f"Generating embeddings for {len(chunks)} chunks...")
