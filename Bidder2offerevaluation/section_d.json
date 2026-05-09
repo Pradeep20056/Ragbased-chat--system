@@ -1,11 +1,11 @@
 {
-    "annual_turnover_applicable": "Yes",
-    "annual_turnover_2021_22": "50000000",
-    "annual_turnover_2022_23": "60000000",
-    "annual_turnover_2023_24": "70000000",
-    "positive_networth_for_latest_fy": "Yes",
-    "networth_value": "15000000",
+    "annual_turnover_applicable": "25%",
+    "annual_turnover_2021_22": "38,24,620",
+    "annual_turnover_2022_23": "",
+    "annual_turnover_2023_24": "",
+    "positive_networth_for_latest_fy": "",
+    "networth_value": "",
     "queries_to_be_raised": [],
-    "pq_financial_status": "Yes",
+    "pq_financial_status": "Not applicable",
     "reason_for_rejection": ""
 }

@@ -1,0 +1,55 @@
+FILE     : 17752987714647.pdf
+TYPE     : PDF
+TOTAL CHUNKS: 2
+CHUNK SIZE  : 1000  |  OVERLAP: 200
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 001 / 002   |   chars: 937
+──────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────
+[PAGE 1 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+JAYANT BANSAL & CO. Off.: 320, Mahesh Nagar,
+Chartered Accountants Ambala Cantt. — 133 001
+
+Mobile No.: 9896061320
+
+The details of annual net turnover and net profit before tax of the firm M/s Hindustan Thermometers,
+5, Industrial Estate, Ambala Cantt (Haryana) for financial years ended 31/0/3/2022, 31/03/2023 &
+31/03/2024, according to the information required pursuant to compliance with the terms and conditions
+
+contained in Tender documents issued by National Small Industries Corporation (NSIC), are given below: -
+
+Last year Last but one year | Last but two years
+(2023-24) (2022-23) (2021-22)
+
+-Gross Sales
+(inclusive of Good and Service Tax) 99889126.90 72927220.11 69597315.39
+
+This certificate is issued solely for the purpose to comply with requirement of Tender Documents and
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 002 / 002   |   chars: 716
+──────────────────────────────────────────────────────────────────────
+-Gross Sales
+(inclusive of Good and Service Tax) 99889126.90 72927220.11 69597315.39
+
+This certificate is issued solely for the purpose to comply with requirement of Tender Documents and
+
+should not be used for any other purpose. The Management of the firm is responsible for compiling above
+said information and ensuring that the firm complies with the requirements of tender documents and for
+providing all relevant information to the NSIC. We have verified the same from the audited financial
+
+statement and other information given to us for verification.
+
+For Jayant Bansal & Co.,
+Chartered Accountants
+
+For Hindustan Thermometer
+For HINDUSTHAN THERMOMETERS
+
+chen bs - Rolin Ya “
+PARSE ER tor)
+
+Dated: 02-12-2024

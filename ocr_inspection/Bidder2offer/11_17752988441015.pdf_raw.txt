@@ -1,0 +1,59 @@
+FILE     : 17752988441015.pdf
+TYPE     : PDF
+PATH     : C:\Users\svija\AppData\Local\Temp\ocr_inspect_1n793ofy\17752988441015.pdf
+CHARS    : 1,430
+STATUS   : OK
+NATIVE PAGES : 0
+OCR PAGES    : 1
+PAGE DETAIL  :
+  Page   1/1: OCR (1,283 chars)
+======================================================================
+
+
+────────────────────────────────────────────────────────────
+[PAGE 1 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+C4 / Hindusthan Thermometers
+Fire Manufacturers of High Energy Igniters & Flame Scanners
+Ref. No: HT26/Q12 Dated: 04-04-2026
+
+Self-Declaration
+
+| Enquiry No. GEM/2026/B/7389028 |
+| Enquiry Date 25-03-2026 |
+
+In line with Government public procurement order Number P-
+45021/2/2017-B.E-II dated 15.06.2017, and further modified order dt.
+28.05.2018 & order 04.06.2020 issued by DPIIT
+
+I / We hereby declare that I / We are a “Local Supplier” meeting the
+requirement of minimum local content (80%) defined in the above
+government notification for the goods against above mentioned enquiry
+
+Number.
+Details of location at which local value addition will be made is as follows:
+Door No. 5
+
+Street / Address 1 ] HSIDC INDUSTRIAL ESTATE
+Street / Address 2 | AMBALA CANTT
+
+District | AMBALA |
+State HARYANA
+
+Country _| INDIA |
+PIN Code 133001
+
+We also understand that the false declarations will be considered as
+breach of Integrity and liable for action.
+
+For Company Name: HINDUSTHAN THERMOMETERS
+
+Seal:
+Signature: 5
+Date: 04-04-2026 Aaj epeossnn
+Place: AMBALA CANTT as ESTATE
+o) Address Contact Nos. 5 Email & website :
+5, HSIDC Industrial Estate, Ph: 91-171-4000453 htindia@gmail.com
+male Cantt-133 001 Ph: 91-171-2980237 info@htindia.in
+Haryana, India Mb. : 91-9416020237 www.htindia.in
+

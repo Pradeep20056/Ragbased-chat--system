@@ -1,0 +1,53 @@
+FILE     : 17752987658697.pdf
+TYPE     : PDF
+TOTAL CHUNKS: 2
+CHUNK SIZE  : 1000  |  OVERLAP: 200
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 001 / 002   |   chars: 994
+──────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────
+[PAGE 1 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+(
+: ( Hindusthan Thermometers
+Fire Manufacturers of High Energy Igniters & Flame Scanners
+8.9 - SELF DECLARATION LETTER FORMAT FOR OEM
+ORIGINAL EQUIPMENT MANUFACTURER (OEM) —- MANUFACTURER’S DECLARATION
+FORM
+
+Date: 04-04-2026
+Tender No.: GEM/2026/B/7389028
+Dear Sir,
+
+We, M/s HINDUSTHAN THERMOMETERS (Name of the OEM) having registered office at #5, HSIDC, INDUSTRIAL
+ESTATE, AMBALA CANTT - 133001, HARYANA and manufacturing works at SAME AS REGISTERED OFFICE are original
+equipment manufacturer for HEA IGNITER SYSTEM (Name of the products), shall submit quote, supply, provide after sales
+
+support during warranty and post warranty period for the products quoted to meet the above mentioned tender requirements.
+
+The undersigned is authorized to issue such authorization on behalf of M/s HINDUSTHAN THERMOMETERS (Name of the
+OEM).
+
+5
+
+INDUSTRIAL
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 002 / 002   |   chars: 383
+──────────────────────────────────────────────────────────────────────
+The undersigned is authorized to issue such authorization on behalf of M/s HINDUSTHAN THERMOMETERS (Name of the
+OEM).
+
+5
+
+INDUSTRIAL
+
+Mobile No.: 9416020237
+
+| Address @ | Contact Nos. | Email & website :
+v | 5, HSIDC Industrial Estate, Ph: 91-171-4000453 htindia@gmail.com
+| Ambala Cantt-133 001 Ph: 91-171-2980237 _ info@htindia.in
+
+liararatindia Mb. : 91-9416020237 www.htindia.in

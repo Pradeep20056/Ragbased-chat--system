@@ -1,0 +1,1292 @@
+FILE     : 17752987808928.pdf
+TYPE     : PDF
+TOTAL CHUNKS: 50
+CHUNK SIZE  : 1000  |  OVERLAP: 200
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 001 / 050   |   chars: 988
+──────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────
+[PAGE 1 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+iN
+
+; fas dear/Bid Number: GEM/2026/B/7389028
+rs GeM Ze 7
+i 5 il ee featar /Dated: 25-03-2026
+g Government Azadi ks
++ e Marketplace @''!! Mahotsav
+
+fas acardst / Bid Document
+
+fas faaxor/Bid Details
+fas dq eet ft atka/aaa /Bid End Date/Time | 04-04-2026 10:00:00
+
+Date/Time
+Validity (From End Date)
+
+pemaroaicwmy iS
+
+IGNITOR, Portable, Battery Operated, 230V mains input.
+Area Classification: Zone-1, Gas Group- IIC, T , IGNITOR,
+
+aey Ah /Item Category Portable, 230V mains input. Area Classification: Zone-1, Gas
+Group- lIC, Temp Class T6
+
+GeMARPTS # alsit 75 feerH / Searched IGNITOR, Portable,230V mains input
+Strings used in GEMARPTS
+
+i uray Portable Single Operated Rectifier Type DC Arc Welding Set
+GeMARPTS a hes [Searched Suitable for Manual Arc Welding Process as per IS 4559, AC
+Result generated in GEMARPTS Voltage Transducer (V2)
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 002 / 050   |   chars: 917
+──────────────────────────────────────────────────────────────────────
+R fe er ret ‘fre Affi / Relevant |° HIGH TEMPERATURE FURNACE WITH GAS
+
+. ee (PROGRAMMABLE DUAL ZONE / SLIDING TUBE FURNACE)
+Categories selected for notification FACILITY
+
+vaauas & fore saqna & asf att eciaiar B Be vert
+at a %/MSE Relaxation for Years of
+Experience and Turnover
+
+Teresa & fore srqara a auf six eelziax B Be Yarat
+&i a ¢ /Startup Relaxation for Years of
+Experience and Turnover
+
+1/8
+
+
+────────────────────────────────────────────────────────────
+[PAGE 2 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Experience Criteria,Bidder Turnover,Certificate (Requested
+in ATC),OEM Authorization Certificate,OEM Annual
+Turnover,Additional Doc 1 (Requested in ATC),Additional
+Doc 2 (Requested in ATC),Additional Doc 3 (Requested in
+fabar & aiet ae aeardsi/Document required ATC),Additional Doc 4 (Requested in ATC),Compliance of
+from seller BoQ specification and supporting document
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 003 / 050   |   chars: 919
+──────────────────────────────────────────────────────────────────────
+*In case any bidder is seeking exemption from Experience /
+Turnover Criteria, the supporting documents to prove his
+eligibility for exemption must be uploaded for evaluation by
+the buyer
+
+ar 3g fafderaat err sraeis fee ae arardsil ar
+fafaer at ser det art aeit fafaarant ar fewer
+aed €? Waal Aq ¢/Do you want to show
+
+documents uploaded by bidders to all
+bidders participated in bid?
+
+fas corel fr war tien aa: at aarel & fore
+
+aragae fas hl Wea! / Minimum number of
+
+bids required to disable automatic bid
+extension
+
+aagé seat} / Number of days for which Bid
+would be auto-extended
+
+airel wane afta Rraeft ax fear sre S1 /
+
+Number of Auto Extension count
+
+fas & Rai cere ufea fhar/Bid to RA enabled
+
+off - IGNITOR, Portable, Battery Operated, 230V mains input.
+- act/Primary product category Area Classification: Zone-1, Gas Group- IIC, T
+
+aeelth aout & ahr aaeitchr Caspr Fd
+
+Hq WAT /Time allowed for Technical 2 Days
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 004 / 050   |   chars: 909
+──────────────────────────────────────────────────────────────────────
+aeelth aout & ahr aaeitchr Caspr Fd
+
+Hq WAT /Time allowed for Technical 2 Days
+
+faverr sragaen (alee fettaror uritexor /stat & Ue
+Wd Usita wsifai anr)/Inspection Required (By
+Empanelled Inspection Authority / Agencies
+pre-registered with GeM)
+
+Clarifications during technical evaluation
+Feta Tals/Evaluation Method Item wise evaluation
+
+Seas} faaxo/EMD Detail
+
+3
+5
+3
+
+HTaLahat/Required
+
+Sadish faaer /ePBG Detail
+
+
+────────────────────────────────────────────────────────────
+[PAGE 3 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Usalgent d/Advisory Bank [state Bank of India
+Surdistt afer (%)/ePBG Percentage(%) 5.00
+
+Sadish Br sragaa HafY (Ars) /Duration of ePBG 21
+required (Months).
+
+|
+
+(a). Svadt sk Soreat Tara UN, Tet AE aT Stet &, oraneit a gar J eer aT! / EMD & Performance securityshould be
+in favour of Beneficiary, wherever it is applicable.
+
+arsrait /Beneficiary :
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 005 / 050   |   chars: 817
+──────────────────────────────────────────────────────────────────────
+|
+
+(a). Svadt sk Soreat Tara UN, Tet AE aT Stet &, oraneit a gar J eer aT! / EMD & Performance securityshould be
+in favour of Beneficiary, wherever it is applicable.
+
+arsrait /Beneficiary :
+
+NA
+Chennai Petroleum Corporation Limited, Manali, Chennai-600068
+(Chennai Petroleum Corporation)
+
+are faarstet aray aeét ear wWa/ Bid splitting not applied.
+
+vasigais aie aaa / Mil Purchase Preference
+
+ae sa ssa faharsit ar ute A watena, ate
+
+Sa AEA Li+X% aH sr ela FF / Purchase
+
+Preference to MIl sellers availabele upto price
+within L1+X%
+
+ae sa sar ute A maftea & fae fas A ara
+
+ar aiftaraat afar / Maximum Percentage of Bid
+quantity for MIl purchase preference
+
+mdse uate (An-sa-sa at waiea4r) Heer
+2017 & HAM Hat FA 1/FHTT 2-H Cae
+siafcerctait ar é areftartt hr srqafa & aia
+16.09.2020 (Haa-waT WX BwMfAea va AM) / Allow
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 006 / 050   |   chars: 799
+──────────────────────────────────────────────────────────────────────
+mdse uate (An-sa-sa at waiea4r) Heer
+2017 & HAM Hat FA 1/FHTT 2-H Cae
+siafcerctait ar é areftartt hr srqafa & aia
+16.09.2020 (Haa-waT WX BwMfAea va AM) / Allow
+
+participation only from Class 1/Class 2 local
+suppliers as per the Public
+procurement(Preference to Make-in-india) order
+2017 date 16.09.2020(as amended and
+applicable time to time)
+
+Yes, in compliance with the MIl ORDER : DPIIT Order(as
+amended and applicable time to time)
+
+wats wie afat/MSE Purchase Preference
+
+waves wie aiat/MSE Purchase Preference
+
+Wea sik ay saat Ae soar fata at ute a
+
+weafsra, aie sar eT Li+Xx aH sr Mat FH W/ | 45
+Purchase Preference to MSE OEMs available upto
+
+price within L1+X%
+Wea IN ay saa aH ule A waa & fag fas
+
+# Arar at HfWeaH ular / Maximum
+
+Percentage of Bid quantity for MSE purchase
+preference
+
+3/8
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 007 / 050   |   chars: 937
+──────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────
+[PAGE 4 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+1. Preference to Make In India products (For bids < 200 Crore):Preference shall be given to Class 1 local supplier
+as defined in public procurement (Preference to Make in India), Order 2017 as amended from time to time and its
+subsequent Orders/Notifications issued by concerned Nodal Ministry for specific Goods/Products. The minimum
+local content to qualify as a Class 1 local supplier is denoted in the bid document. If the bidder wants to avail the
+Purchase preference, the bidder must upload a certificate from the OEM regarding the percentage of the local
+content and the details of locations at which the local value addition is made along with their bid, failing which
+no purchase preference shall be granted. In case the bid value is more than Rs 10 Crore, the declaration relating
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 008 / 050   |   chars: 752
+──────────────────────────────────────────────────────────────────────
+no purchase preference shall be granted. In case the bid value is more than Rs 10 Crore, the declaration relating
+to percentage of local content shall be certified by the statutory auditor or cost auditor, if the OEM is a company
+and by a practicing cost accountant or a chartered accountant for OEMs other than companies as per the Public
+Procurement (preference to Make-in -India) order 2017 dated 04.06.2020. Only Class-l and Class-Il Local suppliers
+as per MIl order dated 4.6.2020 will be eligible to bid. Non - Local suppliers as per MIl order dated 04.06.2020 are
+not eligible to participate. However, eligible micro and small enterprises will be allowed to participate .The
+buyers are advised to refer the OM No.F.1/4/2021-PPD dated 18.05.2023.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 009 / 050   |   chars: 215
+──────────────────────────────────────────────────────────────────────
+OM_No.1 4 2021 PPD dated 18.05.2023 for compliance of Concurrent application of Public Procurement Policy
+for Micro and Small Enterprises Order, 2012 and Public Procurement (Preference to Make in India) Order, 2017.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 010 / 050   |   chars: 989
+──────────────────────────────────────────────────────────────────────
+2. Purchase preference will be given to MSEs having valid Udyam Registration and whose credentials are
+validated online through Udyam Registration portal as defined in Public Procurement Policy for Micro and Small
+Enterprises (MSEs) Order, 2012 dated 23.03.2012 issued by Ministry of Micro, Small and Medium Enterprises and
+its subsequent Orders/Notifications issued by concerned Ministry. If the bidder wants to avail themselves of the
+Purchase preference, the bidder must be the manufacturer / OEM of the offered product on GeM. Traders are
+excluded from the purview of Public Procurement Policy for Micro and Small Enterprises and hence resellers
+offering products manufactured by some other OEM are not eligible for any purchase preference. In respect of bid
+for Services, the bidder must be the Service provider of the offered Service. Relevant documentary evidence in
+this regard shall be uploaded along with the bid in respect of the offered product or service and Buyer will decide
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 011 / 050   |   chars: 998
+──────────────────────────────────────────────────────────────────────
+this regard shall be uploaded along with the bid in respect of the offered product or service and Buyer will decide
+eligibility for purchase preference based on documentary evidence submitted, while evaluating the bid. If L-1 is
+not an MSE and MSE Seller (s) has / have quoted price within L-1+ 15% (Selected by Buyer) of margin of
+purchase preference /price band defined in relevant policy, such MSE Seller shall be given opportunity to match
+L-1 price and contract will be awarded for 25% (selected by Buyer) percentage of total quantity. The buyers are
+advised to refer the OM No. F.1/4/2021-PPD dated 18.05.2023 OM_No.1 4 2021 PPD dated 18.05.2023 for
+compliance of Concurrent application of Public Procurement Policy for Micro and Small Enterprises Order, 2012
+and Public Procurement (Preference to Make in India) Order, 2017. Benefits of MSE will be allowed only if seller is
+validated on-line in GeM profile as well as validated and approved by Buyer after evaluation of documents
+submitted.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 012 / 050   |   chars: 919
+──────────────────────────────────────────────────────────────────────
+3. Estimated Bid Value indicated above is being declared solely for the purpose of guidance on EMD amount and
+for determining the Eligibility Criteria related to Turn Over, Past Performance and Project / Past Experience etc.
+This has no relevance or bearing on the price to be quoted by the bidders and is also not going to have any
+impact on bid participation. Also this is not going to be used as a criteria in determining reasonableness of
+quoted prices which would be determined by the buyer based on its own assessment of reasonableness and
+based on competitive prices received in Bid / RA process.
+
+Fea faa aaax yeaa fait) / Evaluation Method ( Item Wise Evaluation Method )
+
+Contract will be awarded schedulewise and the determination of L1 will be done separately for each schedule.
+The details of item-consignee combination covered under each schedule are as under:
+
+Head Hepyraa / arat be
+Evaluation Schedules
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 013 / 050   |   chars: 997
+──────────────────────────────────────────────────────────────────────
+Head Hepyraa / arat be
+Evaluation Schedules
+
+Schedule 1 || Ignitor, Foriabike Battery Fisaratied 230v Mains input. A Area
+| Classification: Zone-1, Gas Group- lic, T
+Schedule 2 |
+
+IGNITOR, Portable, Battery Operated, 230V Mains Input. Area Classification: Zone-1,
+Gas Group- IIC, T ( 14 pieces )
+
+aeq/aut / tem/Category
+
+Ignitor, Portable, 230v Mains Input. Area Classification: Zone-1, Gas |
+; 10 |
+Group- lic, Temp Class T6 |
+
+4/8
+
+
+────────────────────────────────────────────────────────────
+[PAGE 5 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Content required for qualifying as Class 1 and Class 2 Local Supplier respectively)
+
+aeefthr fafafear Technical Specifications
+
+wer PAR arardst /Buyer
+
+Download
+Specification Document
+
+wR /Ratfes start aM arat/Consignees/Reporting Officer and Quantity
+
+mite Ravear
+aftart /Consignee Ual/Address art /Quantity
+Reporting/Officer
+
+600068,Chennai Petroleum
+Corporation Limited, Manali,
+Chennai
+
+chat & fea/Delivery
+Days
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 014 / 050   |   chars: 984
+──────────────────────────────────────────────────────────────────────
+mite Ravear
+aftart /Consignee Ual/Address art /Quantity
+Reporting/Officer
+
+600068,Chennai Petroleum
+Corporation Limited, Manali,
+Chennai
+
+chat & fea/Delivery
+Days
+
+Padmanathan Alwar
+
+IGNITOR, Portable, 230V Mains Input. Area Classification: Zone-1, Gas Group- IIC,
+Temp Class T6 ( 10 pieces )
+
+(ware: AOA 1 atk Avi 2 a Fares angled a Ba st sar ora HA & fore 3aVaas/Minimum 50% and 20% Local
+
+Content required for qualifying as Class 1 and Class 2 Local Supplier respectively)
+
+aaeitht fafafear Technical Specifications
+
+| ear fafae aearast /Buyer
+
+Download
+Specification Document
+
+‘|
+
+RNd/Rutes stat aM Hrat/Consignees/Reporting Officer and Quantity
+
+wet Rates
+
+after /Consignee
+Reporting/Officer
+
+fSeltatt & fea/Delivery
+
+Udt/Address ara /Quantity Days
+
+600068,Chennai Petroleum
+Corporation Limited, Manali,
+Chennai
+
+1 || Padmanathan Alwar
+
+Buyer added Bid Specific Additional Scope of Work
+
+HA/S.N : | Rat wane & arpa
+o1 | SREEIRM IS THE ccm ae sitvaél/Applicable i.ro. Items |
+
+5/8
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 015 / 050   |   chars: 922
+──────────────────────────────────────────────────────────────────────
+1 || Padmanathan Alwar
+
+Buyer added Bid Specific Additional Scope of Work
+
+HA/S.N : | Rat wane & arpa
+o1 | SREEIRM IS THE ccm ae sitvaél/Applicable i.ro. Items |
+
+5/8
+
+
+────────────────────────────────────────────────────────────
+[PAGE 6 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+#8./S.N ‘ — Readl wane & arqar
+| Document Title Description | ivaét/Applicable i.r.o. Items |
+
+| Tender Document IGNITOR, Portable, Battery
+| Operated, 230V Mains Input.
+|| View Tepe: ROCUnien® Area Classification: Zone-1, Gas
+
+The uploaded document only contains Buyer specific Additional Scope of Work and / or Drawings for the bid items added
+with due approval of Buyer’s competent authority. Buyer has certified that these additional scope and drawings are
+generalized and would not lead to any restrictive bidding.
+
+dar ent sidt a fas & Adv at/Buyer Added Bid Specific Terms and Conditions
+
+1. Generic
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 016 / 050   |   chars: 933
+──────────────────────────────────────────────────────────────────────
+OPTION CLAUSE: The Purchaser reserves the right to increase or decrease the quantity to be ordered up
+to 25 percent of bid quantity at the time of placement of contract. The purchaser also reserves the right to
+increase the ordered quantity up to 25% of the contracted quantity during the currency of the contract at
+the contracted rates. The delivery period of quantity shall commence from the last date of original
+delivery order and in cases where option clause is exercised during the extended delivery period the
+additional time shall commence from the last date of extended delivery period. The additional delivery
+time shall be (Increased quantity + Original quantity) x Original delivery period (in days), subject to
+minimum of 30 days. If the original delivery period is less than 30 days, the additional time equals the
+original delivery period. The Purchaser may extend this calculated delivery duration up to the original
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 017 / 050   |   chars: 193
+──────────────────────────────────────────────────────────────────────
+original delivery period. The Purchaser may extend this calculated delivery duration up to the original
+delivery period while exercising the option clause. Bidders must comply with these terms.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 018 / 050   |   chars: 893
+──────────────────────────────────────────────────────────────────────
+2. Generic
+
+Bidder shall submit the following documents along with their bid for Vendor Code Creation:
+a. Copy of PAN Card.
+b. Copy of GSTIN.
+c. Copy of Cancelled Cheque.
+d. Copy of EFT Mandate duly certified by Bank.
+3. Generic
+Manufacturer Authorization:Wherever Authorised Distributors/service providers are submitting the
+bid, Authorisation Form /Certificate with OEM/Original Service Provider details such as name, designation,
+address, e-mail Id and Phone No. required to be furnished along with the bid
+4. Scope of Supply
+Scope of supply (Bid price to include all cost components) : Only supply of Goods
+5. Buyer Added Bid Specific ATC
+Buyer uploaded ATC document Click here to view the file.
+6. Buyer Added Bid Specific ATC
+Buyer Added text based ATC clauses
+
+Bidder to read the tender document attached in Buyer Added Bid Specific ATCcarefully and submit the following
+documents.
+
+6/8
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 019 / 050   |   chars: 823
+──────────────────────────────────────────────────────────────────────
+Bidder to read the tender document attached in Buyer Added Bid Specific ATCcarefully and submit the following
+documents.
+
+6/8
+
+
+────────────────────────────────────────────────────────────
+[PAGE 7 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+1.The bidder shall submit all requisite documents in support of the Experience Criteria under the Pre-Qualification Criteri
+a (PQC), as stipulated in Clause 1.13 of Section 1: Notice Inviting Tender (NIT) Refer Pages 4 to 5 of the Tender
+Document.
+
+2. The bidder shall submit the duly filled, signed, and sealedSection 3 of the Tender Document Refer Pages 10 to 14oft
+he Tender Document.
+
+3. The bidder shall submit the duly filled, signed, and sealedSection 8 of the Tender Document Refer Pages 58 to 70 oft
+he Tender Document.
+
+aeternr/Disclaimer
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 020 / 050   |   chars: 861
+──────────────────────────────────────────────────────────────────────
+3. The bidder shall submit the duly filled, signed, and sealedSection 8 of the Tender Document Refer Pages 58 to 70 oft
+he Tender Document.
+
+aeternr/Disclaimer
+
+The additional terms and conditions have been incorporated by the Buyer after approval of the Competent
+Authority in Buyer Organization, whereby Buyer organization is solely responsible for the impact of these clauses
+on the bidding process, its outcome, and consequences thereof including any eccentricity / restriction arising in
+the bidding process due to these ATCs and due to modification of technical specifications and / or terms and
+conditions governing the bid. If any clause(s) is / are incorporated by the Buyer regarding following, the bid and
+resultant contracts shall be treated as null and void and such bids may be cancelled by GeM at any stage of
+bidding process without any notice:-
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 021 / 050   |   chars: 912
+──────────────────────────────────────────────────────────────────────
+1. Definition of Class | and Class II suppliers in the bid not in line with the extant Order / Office Memorandum
+issued by DPIIT in this regard.
+
+2. Seeking EMD submission from bidder(s), including via Additional Terms & Conditions, in contravention to
+exemption provided to such sellers under GeM GTC.
+
+3. Publishing Custom / BOQ bids for items for which regular GeM categories are available without any
+Category item bunched with it.
+
+Creating BoQ bid for single item.
+
+Mentioning specific Brand or Make or Model or Manufacturer or Dealer name.
+
+Mandating submission of documents in physical form as a pre-requisite to qualify bidders.
+
+Floating / creation of work contracts as Custom Bids in Services.
+
+Seeking sample with bid or approval of samples during bid evaluation process. (However, in bids for
+
+attached categories, trials are allowed as per approved procurement policy of the buyer nodal Ministries)
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 022 / 050   |   chars: 764
+──────────────────────────────────────────────────────────────────────
+attached categories, trials are allowed as per approved procurement policy of the buyer nodal Ministries)
+
+9. Mandating foreign / international certifications even in case of existence of Indian Standards without
+specifying equivalent Indian Certification / standards.
+
+10. Seeking experience from specific organization / department / institute only or from foreign / export
+experience.
+
+11. Creating bid for items from irrelevant categories.
+
+12. Incorporating any clause against the MSME policy and Preference to Make in India Policy.
+
+13. Reference of conditions published on any external site or reference to external documents/clauses.
+
+14. Asking for any Tender fee / Bid Participation fee / Auction fee in case of Bids / Forward Auction, as the
+case may be.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 023 / 050   |   chars: 825
+──────────────────────────────────────────────────────────────────────
+14. Asking for any Tender fee / Bid Participation fee / Auction fee in case of Bids / Forward Auction, as the
+case may be.
+
+15. Buyer added ATC Clauses which are in contravention of clauses defined by buyer in system generated bid
+template as indicated above in the Bid Details section, EMD Detail, ePBG Detail and MIl and MSE Purchase
+Preference sections of the bid, unless otherwise allowed by GeM GTC.
+
+16. In a category based bid, adding additional items, through buyer added additional scope of work/ additional
+
+terms and conditions/or any other document. If buyer needs more items along with the main item, the
+
+same must be added through bunching category based items or by bunching custom catalogs or
+
+bunching a BoQ with the main category based item, the same must not be done through ATC or Scope of
+Work.
+
+SN a oS
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 024 / 050   |   chars: 724
+──────────────────────────────────────────────────────────────────────
+bunching a BoQ with the main category based item, the same must not be done through ATC or Scope of
+Work.
+
+SN a oS
+
+Further, if any seller has any objection/grievance against these additional clauses or otherwise on any aspect of
+this bid, they can raise their representation against the same by using the Representation window provi i
+the bid details field in Seller dashboard after logging in as a seller within 4 days of bid publication
+
+
+
+────────────────────────────────────────────────────────────
+[PAGE 8 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+is duty bound to reply to all such representations and would not be allowed to open bids if he fails to reply to
+such representations.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 025 / 050   |   chars: 941
+──────────────────────────────────────────────────────────────────────
+All GeM Sellers/Service Providers shall ensure full compliance with all applicable labour laws,
+including the provisions, rules, schemes and guidelines under the four Labour Codes i.e. the Code
+on Wages, 2019; the Industrial Relations Code, 2020; the Occupational Safety, Health and Working
+Conditions Code, 2020; and the Code on Social Security, 2020 as and when notified and brought into
+force by the Government of India.
+
+For all provisions of the Labour Codes that are pending operationalisation through rules, schemes or
+notifications, the corresponding provisions of the pre-existing labour enactments (such as The
+Minimum Wages Act, 1948, The Payment of Wages Act, 1936, The Payment of Bonus Act, 1965, The
+Equal Remuneration Act, 1976, The Payment of Gratuity Act, 1972, etc. and relevant State Rules)
+shall continue to remain applicable.
+
+The Seller/ Service Providers shall, therefore, be responsible for ensuring compliance under:
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 026 / 050   |   chars: 736
+──────────────────────────────────────────────────────────────────────
+The Seller/ Service Providers shall, therefore, be responsible for ensuring compliance under:
+
+e All notified and enforceable provisions of the new Labour Codes as mentioned hereinabove;
+and
+e All operative provisions of the erstwhile Labour Laws until their complete substitution.
+
+All obligations relating to wages, social security, safety, working conditions, industrial relations etc.
+and any other statutory requirements shall be strictly met by the Seller/ Service Provider. Any non-
+compliance shall constitute a breach of the contract and shall entitle the Buyer to take appropriate
+action in accordance with the contract and applicable law.
+
+fas mares odt & 33 afr 2 his Bid is also governed by the General Terms and Conditions
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 027 / 050   |   chars: 983
+──────────────────────────────────────────────────────────────────────
+fas mares odt & 33 afr 2 his Bid is also governed by the General Terms and Conditions
+
+aa ht warea wat & ws 26 & Gast A oa & ws aA Aa wen wea ae ca & fasr S ale WW ufady H Bay Ff
+ad & wy af dear wet ara ae ae ar ars af fast sa fAfad a fas aa & fae aaft oa eon oa ae fas aa aot
+waa uftart & oa csipa eifas A one dea waa fast at sear Ha Orar eh 3 als at Tea HlooT few aT
+a Sa HAUT T A WH qGT H dena wars ae 3 Gea & Ha Her HT areal Teas FH STMT FT /n terms
+
+of GeM GTC clause 26 regarding Restrictions on procurement from a bidder of a country which shares a land border with India, any bidder from a country which shares a
+land border with India will be eligible to bid in this tender only if the bidder is registered with the Competent Authority. While participating in bid, Bidder has to undertake
+compliance of this and any false declaration and non-compliance of this would be a ground for immediate termination of the contract and further legal action in
+accordance with the laws.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 028 / 050   |   chars: 736
+──────────────────────────────────────────────────────────────────────
+---qeqae/Thank You---
+
+8/8
+
+
+────────────────────────────────────────────────────────────
+[PAGE 9 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+ENQUIRY CUM OFFER
+
+Enquiry No. :C19M260039
+
+SINGLE BID / TWO BID
+
+OFFST REL cw covminwsereces
+2) ot ee es
+
+Dear Sir,
+
+Sr.no.Item Code and Unit Qty
+
+Description
+
+GROUP: 1
+
+BURNER & SPARE PARTS
+0010 1399960304 EA 14.000 each
+
+BATTERY OPERATD PORTABLE IGNITOR INLET-12VDC,
+OUTLET-3000VDC
+ITEM TEXT
+IGNITOR, Portable,Battery Operated, 230V mains input.
+Area Classification: Zone-1 ,Gas Group- IIC, Temp Class T6
+
+The Battery operated igniter shall be as per the technical
+specifications mentioned in Annexure-I.
+
+BREAKUP OF QUANTITY
+CPCL-Manali Refinery : 14.000EA
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 029 / 050   |   chars: 994
+──────────────────────────────────────────────────────────────────────
+The Battery operated igniter shall be as per the technical
+specifications mentioned in Annexure-I.
+
+BREAKUP OF QUANTITY
+CPCL-Manali Refinery : 14.000EA
+
+
+
+────────────────────────────────────────────────────────────
+[PAGE 10 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Annexure-l
+IGNITOR, Portable, Battery Operated.
+Ignitor spec:
+Area Classification: Zone-1, Gas Group- IIC, Temp Class T6
+
+The system consists of Exciter Box, Igniter Cable Assembly and Igniter Lance and will operate on Capacitive Discharge Principle to generate high
+intensity spark and should be approved by PESO.
+
+The system should have following specifications:
+Exciter Box:
+
+A) FLP and WP enclosure should be made of LM6 construction for use in Hazardous area zone | and II & Gas Gr. IIC and it will be used to mount
+the electrical components inside.
+
+B) Energy of the spark will be up to 18 joules.
+
+C) Box will have isolator switch, push button and indicating lamps for easy operation.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 030 / 050   |   chars: 910
+──────────────────────────────────────────────────────────────────────
+B) Energy of the spark will be up to 18 joules.
+
+C) Box will have isolator switch, push button and indicating lamps for easy operation.
+
+D) Input main power supply 230V AC.
+
+Igniter cable:
+
+A) 2.5 sq. mm. two core multi strand copper cable.
+
+B) Length of cable will be 15 meters.
+
+C) Cabel will be fitted by FLP cable gland to exciter box at one end and Igniter lance at other end through FLP enclosure.
+D) This cable should be able to withstand the high voltage generated from transformer secondary.
+Igniter lance:
+
+A) Lance will be of S.S. construction and will be of 16mm O.D. and 1500 mm insertion length.
+
+B) Lance will have center electrode supported by ceramic insulators.
+
+C)Lance will have removable tip at one end and the other end will be connected to small FLP enclosure, suitable for area IIC for cable
+termination. The igniter tip should be prefabricated and shall not require any gap adjustment.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 031 / 050   |   chars: 822
+──────────────────────────────────────────────────────────────────────
+Detailed specifications and drawings should be submitted along with the bid for eva
+before delivery.
+
+ation. Drawing approval should be obtained from CPCL
+
+
+
+────────────────────────────────────────────────────────────
+[PAGE 11 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+ENQUIRY CUM OFFER
+
+Enquiry No. :C19M260039
+
+Sr.no.Item Code and Unit Qty
+Description
+
+GROUP: 2
+ACCESSARIES AND SPARES
+SUPPLEMENTARY REQUIREMENT
+
+0020 7195990644 EA 10.000
+IGNITOR, PORTABLE,COMPLETE SET OF FFY DIV
+
+ITEM TEXT
+IGNITOR, Portable,230V mains input.
+
+Area Classification: Zone-1 ,Gas Group- IIC, Temp Class T6
+
+each
+
+The mains operated igniter shall be as per the technical specifications
+
+mentioned in Annexure-II.
+
+BREAKUP OF QUANTITY
+CPCL-Manali Refinery 3 10.000EA
+
+Signature of Vendor with Office Seal
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 032 / 050   |   chars: 958
+──────────────────────────────────────────────────────────────────────
+each
+
+The mains operated igniter shall be as per the technical specifications
+
+mentioned in Annexure-II.
+
+BREAKUP OF QUANTITY
+CPCL-Manali Refinery 3 10.000EA
+
+Signature of Vendor with Office Seal
+
+
+────────────────────────────────────────────────────────────
+[PAGE 12 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Annexure-ll
+IGNITOR, Portable, 230V mains operated.
+Ignitor spec:
+Area Classification: Zone-1 Gas Group- IIC, Temp Class T3
+
+The system consists of Exciter Box, Igniter Cable Assembly and Igniter Lance and will operate on Capacitive Discharge Principle to generate high
+intensity spark and should be approved by PESO.
+
+The system should have following specifications:
+Exciter Box:
+
+e The FLP and WP enclosure should be made of LM6 construction for use in Hazardous area zone | and II & Gas Gr. IIC and it will be used to
+mount the electrical components inside.
+
+e The energy of the spark will be up to 18 joules.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 033 / 050   |   chars: 892
+──────────────────────────────────────────────────────────────────────
+e The energy of the spark will be up to 18 joules.
+
+e The box will have isolator switch, push button and indicating lamps for easy operation.
+
+Igniter cable:
+
+e This will be 2.5 sq. mm. two core multi strand copper cable.
+
+e The length of cable will be 15 meters. This will be fitted by FLP cable gland to exciter box at one end and Igniter lance at other end
+through FLP enclosure.
+
+e This cable should be able to withstand the high voltage generated from transformer secondary.
+
+Igniter lance:
+
+e = This will be of S.S. construction and will be of 16mm O.D. and 1500 mm insertion length.
+
+e This will have center electrode supported by ceramic insulators.
+
+e The lance will have removable tip at one end and the other end will be connected to small FLP enclosure, suitable for area IIC for cable
+termination. The igniter tip should be prefabricated and shall not require any gap adjustment.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 034 / 050   |   chars: 974
+──────────────────────────────────────────────────────────────────────
+Detailed specifications and drawings should be submitted along with the bid for evaluation. Drawing approval should be obtained from CPCL
+before delivery.
+
+
+
+────────────────────────────────────────────────────────────
+[PAGE 13 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Evaluation Schedules
+Schedule 2
+
+719590644
+
+Material Code Item Description Quantity
+
+Ignitor, Portable, 230v
+Mains Input. Area
+Classification: Zone-1,
+Gas Group- IIc, Temp
+Class T6
+
+The Specifications provided as Annexure II shall be read as follows
+
+Before Corrigendum After Corrigendum
+
+Exciter Box:
+
+A) FLP and WP enclosure should be made of LM6
+construction for use in Hazardous area zone | and
+ll & Gas Gr. IIC and it will be used to mount the
+electrical components inside.
+
+B) Energy of the spark will be up to 18 joules.
+
+C) Box will have isolator switch, push button and
+indicating lamps for easy operation.
+
+D) Input main power supply 230V AC.
+
+Igniter lance:
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 035 / 050   |   chars: 923
+──────────────────────────────────────────────────────────────────────
+B) Energy of the spark will be up to 18 joules.
+
+C) Box will have isolator switch, push button and
+indicating lamps for easy operation.
+
+D) Input main power supply 230V AC.
+
+Igniter lance:
+
+A) Lance will be of S.S. construction and will be of
+16mm O.D. and 1500 mm insertion length.
+
+B) Lance will have center electrode supported by
+ceramic insulators.
+
+C)Lance will have removable tip at one end and
+the other end will be connected to small FLP
+enclosure, suitable for area IIC for cable
+termination. The igniter tip should be
+prefabricated and shall not require any gap
+adjustment.
+
+C19M260039-GEM/2026/B/7389028
+
+Corrigendum for Procurement of Furnace Ignitors
+
+Exciter Box:
+
+A) FLP and WP enclosure should be made of LM6
+construction for use in Hazardous area zone | and
+Il & Gas Gr. IIC and it will be used to mount the
+electrical components inside.
+
+B) The energy of the spark will be minimum 7
+Joules up to 18 joules
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 036 / 050   |   chars: 962
+──────────────────────────────────────────────────────────────────────
+B) The energy of the spark will be minimum 7
+Joules up to 18 joules
+
+C) Box will have isolator switch, push button and
+indicating lamps for easy operation.
+
+D) Input main power supply 230V AC.
+
+Igniter lance:
+
+A) Lance will be of S.S. construction and will be of
+16mm with a tolerance of +1 mm and 1500 mm
+insertion length.
+
+B) Lance will have center electrode supported by
+ceramic insulators.
+
+C)Lance will have removable tip at one end and
+the other end will be connected to small FLP
+enclosure, suitable for area IIC for cable
+termination. The igniter tip should be
+prefabricated and shall not require any gap
+adjustment.
+
+Page 2 of 2
+
+
+────────────────────────────────────────────────────────────
+[PAGE 14 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Annexure | - Addendum/ Corrigendum
+
+Evaluation Schedules
+
+Schedule 1
+
+1399960304
+
+Material Code
+
+Item Description
+
+Ignitor, Portable,
+Battery Operated, 230v
+Mains Input. Area
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 037 / 050   |   chars: 796
+──────────────────────────────────────────────────────────────────────
+Evaluation Schedules
+
+Schedule 1
+
+1399960304
+
+Material Code
+
+Item Description
+
+Ignitor, Portable,
+Battery Operated, 230v
+Mains Input. Area
+
+Classification: Zone-1,
+Gas Group- IIc,
+
+14
+
+The Specifications provided as Annexure | shall be read as follows
+
+Exciter Box:
+
+A) FLP and WP enclosure should be made of LM6
+construction for use in Hazardous area zone | and
+Il & Gas Gr. IIC and it will be used to mount the
+electrical components inside.
+
+B) Energy of the spark will be up to 18 joules.
+
+C) Box will have isolator switch, push button and
+indicating lamps for easy operation.
+
+D) Input main power supply 230V AC.
+
+Igniter lance:
+
+A) Lance will be of S.S. construction and will be of
+16mm O.D. and 1500 mm insertion length.
+
+B) Lance will have center electrode supported by
+ceramic insulators.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 038 / 050   |   chars: 929
+──────────────────────────────────────────────────────────────────────
+Igniter lance:
+
+A) Lance will be of S.S. construction and will be of
+16mm O.D. and 1500 mm insertion length.
+
+B) Lance will have center electrode supported by
+ceramic insulators.
+
+C)Lance will have removable tip at one end and
+the other end will be connected to small FLP
+enclosure, suitable for area IIC for cable
+termination. The igniter tip should be
+prefabricated and shall not require any gap
+adjustment.
+
+C19M260039-GEM/2026/B/7389028
+
+Before Corrigendum
+
+Corrigendum for Procurement of Furnace Ignitors
+
+After Corrigendum
+
+Exciter Box:
+
+A) FLP and WP enclosure should be made of LM6
+construction for use in Hazardous area zone | and
+Il & Gas Gr. IIC and it will be used to mount the
+electrical components inside.
+
+B) The energy of the spark will be minimum 7
+Joules up to 18 joules
+
+C) Box will have isolator switch, push button and
+indicating lamps for easy operation.
+
+D) Input main power supply 230V AC.
+
+Igniter lance:
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 039 / 050   |   chars: 871
+──────────────────────────────────────────────────────────────────────
+C) Box will have isolator switch, push button and
+indicating lamps for easy operation.
+
+D) Input main power supply 230V AC.
+
+Igniter lance:
+
+A) Lance will be of S.S. construction and will be of
+16mm with a tolerance of +1 mm and 1500 mm
+insertion length.
+
+B) Lance will have center electrode supported by
+ceramic insulators.
+
+C)Lance will have removable tip at one end and
+the other end will be connected to small FLP
+enclosure, suitable for area IIC for cable
+termination. The igniter tip should be
+prefabricated and shall not require any gap
+adjustment.
+
+Page | of 2
+
+
+
+────────────────────────────────────────────────────────────
+[PAGE 15 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Bid Number: GEM/2026/B/7389028
+» GeM fas Dated: 03-04-2026
+
+Govern Azadin, Ka
+> pe © Narkekslece Amrit Mahotsav
+
+Bid Corrigendum
+
+GEM/2026/B/7389028-C3
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 040 / 050   |   chars: 385
+──────────────────────────────────────────────────────────────────────
+Govern Azadin, Ka
+> pe © Narkekslece Amrit Mahotsav
+
+Bid Corrigendum
+
+GEM/2026/B/7389028-C3
+
+Following terms and conditions supersede all existing “Buyer added Bid Specific Terms and conditions” given in
+the bid document or any previous corrigendum. Prospective bidders are advised to bid as per following Terms
+and Conditions:
+
+Buyer Added Bid Specific Additional Terms and Conditions
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 041 / 050   |   chars: 936
+──────────────────────────────────────────────────────────────────────
+1. OPTION CLAUSE: The Purchaser reserves the right to increase or decrease the quantity to be ordered up
+to 25 percent of bid quantity at the time of placement of contract. The purchaser also reserves the right to
+increase the ordered quantity up to 25% of the contracted quantity during the currency of the contract at
+the contracted rates. The delivery period of quantity shall commence from the last date of original
+delivery order and in cases where option clause is exercised during the extended delivery period the
+additional time shall commence from the last date of extended delivery period. The additional delivery
+time shall be (Increased quantity + Original quantity) x Original delivery period (in days), subject to
+minimum of 30 days. If the original delivery period is less than 30 days, the additional time equals the
+original delivery period. The Purchaser may extend this calculated delivery duration up to the original
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 042 / 050   |   chars: 193
+──────────────────────────────────────────────────────────────────────
+original delivery period. The Purchaser may extend this calculated delivery duration up to the original
+delivery period while exercising the option clause. Bidders must comply with these terms.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 043 / 050   |   chars: 978
+──────────────────────────────────────────────────────────────────────
+Bidder shall submit the following documents along with their bid for Vendor Code Creation:
+a. Copy of PAN Card.
+b. Copy of GSTIN.
+c. Copy of Cancelled Cheque.
+d. Copy of EFT Mandate duly certified by Bank.
+
+Manufacturer Authorization:Wherever Authorised Distributors/service providers are submitting the
+bid, Authorisation Form /Certificate with OEM/Original Service Provider details such as name, designation,
+address, e-mail Id and Phone No. required to be furnished along with the bid
+
+Scope of supply (Bid price to include all cost components) : Only supply of Goods
+
+Buyer Added text based ATC clauses
+
+Bidder to read the tender document attached in Buyer Added Bid Specific ATC carefully and submit the following document
+s.
+
+1,The bidder shall submit all requisite documents in support of the Experience Criteria under the Pre-Qualification
+Criteria (PQC), as stipulated in Clause 1.13 of Section 1: Notice Inviting Tender (NIT) Refer Pages 4 to 5 of the
+Tender Document.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 044 / 050   |   chars: 514
+──────────────────────────────────────────────────────────────────────
+2. The bidder shall submit the duly filled, signed, and sealedSection 3 of the Tender Document Refer Pages 10 to 14 of
+. the Tender Document.
+
+3. The bidder shall submit the duly filled, signed, and sealed Section 8 of the Tender Document Refer Pa rs Tee
+PS %
+BY
+
+the Tender Document.
+
+fe 1/2
+
+
+────────────────────────────────────────────────────────────
+[PAGE 16 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+6. Buyer uploaded ATC document Click here to view the file.
+
+Disclaimer
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 045 / 050   |   chars: 855
+──────────────────────────────────────────────────────────────────────
+Disclaimer
+
+The additional terms and conditions have been incorporated by the Buyer after approval of the Competent
+Authority in Buyer Organization, whereby Buyer organization is solely responsible for the impact of these clauses
+on the bidding process, its outcome, and consequences thereof including any eccentricity / restriction arising in
+the bidding process due to these ATCs and due to modification of technical specifications and / or terms and
+conditions governing the bid. If any clause(s) is / are incorporated by the Buyer regarding following, the bid and
+resultant contracts shall be treated as null and void and such bids may be cancelled by GeM at any stage of
+bidding process without any notice:-
+
+Definition of Class | and Class II suppliers in the bid not in line with the extant Order / Office Memorandum
+issued by DPIIT in this regard.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 046 / 050   |   chars: 695
+──────────────────────────────────────────────────────────────────────
+Definition of Class | and Class II suppliers in the bid not in line with the extant Order / Office Memorandum
+issued by DPIIT in this regard.
+
+Seeking EMD submission from bidder(s), including via Additional Terms & Conditions, in contravention to
+exemption provided to such sellers under GeM GTC.
+
+Publishing Custom / BOQ bids for items for which regular GeM categories are available without any
+Category item bunched with it.
+
+Creating BoQ bid for single item.
+
+Mentioning specific Brand or Make or Model or Manufacturer or Dealer name.
+
+Mandating submission of documents in physical form as a pre-requisite to qualify bidders.
+
+Floating / creation of work contracts as Custom Bids in Services.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 047 / 050   |   chars: 780
+──────────────────────────────────────────────────────────────────────
+Mandating submission of documents in physical form as a pre-requisite to qualify bidders.
+
+Floating / creation of work contracts as Custom Bids in Services.
+
+. Seeking sample with bid or approval of samples during bid evaluation process. (However, in bids for
+attached categories, trials are allowed as per approved procurement policy of the buyer nodal Ministries)
+Mandating foreign / international certifications even in case of existence of Indian Standards without
+specifying equivalent Indian Certification / standards.
+
+Seeking experience from specific organization / department / institute only or from foreign / export
+experience.
+
+Creating bid for items from irrelevant categories.
+
+Incorporating any clause against the MSME policy and Preference to Make in India Policy.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 048 / 050   |   chars: 638
+──────────────────────────────────────────────────────────────────────
+Creating bid for items from irrelevant categories.
+
+Incorporating any clause against the MSME policy and Preference to Make in India Policy.
+
+Reference of conditions published on any external site or reference to external documents/clauses.
+Asking for any Tender fee / Bid Participation fee / Auction fee in case of Bids / Forward Auction, as the
+case may be.
+
+Buyer added ATC Clauses which are in contravention of clauses defined by buyer in system generated bid
+
+template as indicated above in the Bid Details section, EMD Detail, ePBG Detail and MIl and MSE Purchase
+Preference sections of the bid, unless otherwise allowed by GeM GTC.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 049 / 050   |   chars: 578
+──────────────────────────────────────────────────────────────────────
+template as indicated above in the Bid Details section, EMD Detail, ePBG Detail and MIl and MSE Purchase
+Preference sections of the bid, unless otherwise allowed by GeM GTC.
+
+In a category based bid, adding additional items, through buyer added additional scope of work/ additional
+terms and conditions/or any other document. If buyer needs more items along with the main item, the
+same must be added through bunching category based items or by bunching custom catalogs or
+bunching a BoQ with the main category based item, the same must not be done through ATC or Scope of
+Work.
+
+──────────────────────────────────────────────────────────────────────
+CHUNK 050 / 050   |   chars: 642
+──────────────────────────────────────────────────────────────────────
+Further, if any seller has any objection/grievance against these additional clauses or otherwise on any aspect of
+this bid, they can raise their representation against the same by using the Representation window provided in
+the bid details field in Seller dashboard after logging in as a seller within 4 days of bid publication on GeM. Buyer
+is duty bound to reply to all such representations and would not be allowed to open bids if he fails to reply to
+such representations.
+
+*This document shall overwrite all previous versions of Bid Specific Additional Terms and Conditions.
+
+This Bid is also governed by the General Terms and Conditions

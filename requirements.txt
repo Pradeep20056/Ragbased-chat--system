@@ -11,3 +11,5 @@ pymupdf
 langchain-google-genai
 pandas
 openpyxl
+pytesseract
+Pillow

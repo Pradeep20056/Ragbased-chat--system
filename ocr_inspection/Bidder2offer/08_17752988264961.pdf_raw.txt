@@ -1,0 +1,97 @@
+FILE     : 17752988264961.pdf
+TYPE     : PDF
+PATH     : C:\Users\svija\AppData\Local\Temp\ocr_inspect_1n793ofy\17752988264961.pdf
+CHARS    : 1,733
+STATUS   : OK
+NATIVE PAGES : 0
+OCR PAGES    : 4
+PAGE DETAIL  :
+  Page   1/4: OCR (0 chars)  ← BLANK after OCR
+  Page   2/4: OCR (849 chars)
+  Page   3/4: OCR (210 chars)
+  Page   4/4: OCR (225 chars)
+======================================================================
+
+
+────────────────────────────────────────────────────────────
+[PAGE 2 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Government of India
+
+Form GST REG-06
+[See Rule 10(1)]
+
+Registration Certificate
+
+Registration Number :06ADEPJ8984H1Z5
+
+1 Legal Name CHANDER LEKHA JAIN
+Trade Name, if any HINDUSTHAN THERMOMETERS
+: Constitution of Business Proprietorship
+
+4. Address of Principal Place of No.5, HINDUSTHAN THERMOMETERS, INDUSTRIAL
+Business ESTATE, AMBALA CANTT, Ambala, Haryana, 133001
+
+Bh: Date of Liability 01/07/2017
+01/07/2017
+
+Period of Validity
+8. Particulars of Approving Authority
+
+NA
+
+Tq: Type of Registration Regular
+
+Signature
+
+Name
+
+Jurisdictional Office
+
+9. Date of issue of Certificate 21/09/2017
+
+Note: The registration certificate is required to be prominently displayed at all places of business in the State.
+
+This is a system generated digitally signed Registration Certificate issued based on the deemed approval of the application for
+registration
+
+
+
+────────────────────────────────────────────────────────────
+[PAGE 3 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+GSTIN 06ADEPJ8984H1Z5
+Legal Name CHANDER LEKHA JAIN
+Trade Name, if any HINDUSTHAN THERMOMETERS
+
+Details of Additional Places of Business
+
+Total Number of Additional Places of Business in the State 0
+
+Annexure A
+
+
+
+────────────────────────────────────────────────────────────
+[PAGE 4 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Annexure B
+
+wera wad
+
+GSTIN O06ADEPJ8984H1Z5
+Legal Name CHANDER LEKHA JAIN
+
+Trade Name, if any HINDUSTHAN THERMOMETERS
+
+Details of Proprietor
+
+Name CHANDER LEKHA JAIN
+
+Designation/Status Proprietor
+
+Haryana
+
+Resident of State
+
+

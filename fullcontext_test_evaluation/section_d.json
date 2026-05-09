@@ -1,0 +1,14 @@
+{
+    "annual_turnover_applicable": "Applicable - Required amount not found in documents",
+    "annual_turnover_2021_22": "695.97",
+    "annual_turnover_2022_23": "729.27",
+    "annual_turnover_2023_24": "998.89",
+    "positive_networth_for_latest_fy": "Not Found in Documents",
+    "networth_value": "Not Found in Documents",
+    "queries_to_be_raised": [
+        "Bidder to provide a certified Net Worth certificate for the latest financial year (FY 2023-24) as the value is not explicitly stated in the submitted CA certificate or ITR acknowledgments.",
+        "Bidder to clarify if the turnover figures provided in the CA certificate dated 02-12-2024 are net of GST, as the certificate specifies 'inclusive of GST'."
+    ],
+    "pq_financial_status": "Query to be raised",
+    "reason_for_rejection": "Not Applicable"
+}

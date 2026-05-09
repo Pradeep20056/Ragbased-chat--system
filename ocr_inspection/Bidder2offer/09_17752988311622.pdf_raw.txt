@@ -1,0 +1,95 @@
+FILE     : 17752988311622.pdf
+TYPE     : PDF
+PATH     : C:\Users\svija\AppData\Local\Temp\ocr_inspect_1n793ofy\17752988311622.pdf
+CHARS    : 2,056
+STATUS   : OK
+NATIVE PAGES : 1
+OCR PAGES    : 1
+PAGE DETAIL  :
+  Page   1/2: OCR (1,685 chars)
+  Page   2/2: native text (75 chars)
+======================================================================
+
+
+────────────────────────────────────────────────────────────
+[PAGE 1 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+try Fi
+
+Hindusthan Thermometers
+
+Manufacturers of HEA Igniter System & Flame Scanner System
+
+E-Payment vide RTGS-NEFT
+
+We request and hereby authorize you to execute E-Payment vide RTGS/NEFT modes to Our Bank account as per the
+details given below:
+
+1. | Name of Bank “|: PUNJAB NATIONAL BANK |
+(Erstwhile ORIENTAL BANK OF COMMERCE)
+
+Qe | Branch Name & Address : MAHESH NAGAR, AMBALA CANTT-133001 |
+
+3. | Account Type : CASH CREDIT
+
+a. Bank Account Number Ts 07324011000280
+
+5. | IFSC code of the Bank Branch (New) |_| : PUNBOO73210 |
+
+6. MICR Code OF THE Bank Branch (New) | : 133024030
+
+Zs Bank e-mail ID _ PASSER OAS BRIE |
+| 8. Bank Telephone No. : 0171-2654255
+
+9. =i Name of the Company/Beneficiary : HINDUSTHAN THERMOMETERS |
+
+10. Address of the Company : #5, INDUSTRIAL ESTATE,
+
+: AMBALA CANTT - 2133001, HARYANA
+
+11. | Telephone No. | 9#171-2699237 S|
+
+TZ. Fax No : 0171-2699037
+
+13: E-mail : htindia@gmail.com
+
+14. PAN : ADEPJ8984H |
+
+We hereby declare and Certify above particulars as true & correct for receiving e-payment towards our supply/service. Bank
+Charges, if any charged by our mentioned Bank shall be borne by us.
+
+ESP NENBUST NAN
+chawolw Rhu Mpa
+
+RMOMETERS
+HERMOMETERS
+
+NAME: CHANDER LEKHA JAIN Proprietor
+Designation: Proprietor
+
+VERIFICATION FROM THE BANK
+
+We have verified the above mentioned Bank Details (Pt No. 1 to 8) and certify the same as true and correct.
+
+Se
+
+For PUNJAB NATI
+
+h Manager
+BALA CANTT
+
+ignatory -— BViITE Sw eso Mu
+
+g | Address ®)| Contact Nos. Email & website :
+| 5, Industrial Estate, Ph: 91-171-2980237 htindia@gmail.com
+Ambala Cantt-133 001 Fax : 91-171-2970237 info@htindia.in
+| Haryana, India | Mb. : 91-9416020237 } www.htindia.in
+
+
+
+────────────────────────────────────────────────────────────
+[PAGE 2 — native text]
+────────────────────────────────────────────────────────────
+---CANCELLED-------
+XXXXXXXXXXXXXXXXX
+-------------------------------------

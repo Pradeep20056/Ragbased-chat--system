@@ -1,0 +1,423 @@
+FILE     : 17752987598843.pdf
+TYPE     : PDF
+PATH     : C:\Users\svija\AppData\Local\Temp\ocr_inspect_1n793ofy\17752987598843.pdf
+CHARS    : 10,345
+STATUS   : OK
+NATIVE PAGES : 0
+OCR PAGES    : 6
+PAGE DETAIL  :
+  Page   1/6: OCR (1,789 chars)
+  Page   2/6: OCR (1,825 chars)
+  Page   3/6: OCR (1,773 chars)
+  Page   4/6: OCR (1,104 chars)
+  Page   5/6: OCR (1,505 chars)
+  Page   6/6: OCR (1,451 chars)
+======================================================================
+
+
+────────────────────────────────────────────────────────────
+[PAGE 1 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Hindusthan Thermometers
+
+Manufacturers of High Energy Igniters & Flame Scanners
+
+Ref. No.: HT26/Q11 Dated: 04-04-2026
+
+Mr. Padmanathan Alwar
+
+M&C Department-Materials
+
+Chennai Petroleum Corporation Limited
+Manali, Chennai 600068
+
+Respected Sir,
+
+We acknowledge with thanks the receipt of your above mentioned enquiry for online bid submission.
+We, at M/s. Hindusthan Thermometers have been continuously striving to improve our services to enhance Customer Delight.
+
+** The following documents are uploaded in the portal:
+
+Unpriced offer - Details as per attached Annexure - 1
+
+Bidder’s Information Sheet
+
+Pre-Qualification Details
+
+Deviation Sheet
+
+Declaration of Black Listing/ Holiday Listing
+
+Declaration for Confidentiality Clause
+
+Land Border Sharing Procurement Rules Declaration
+
+Declaration of Compliance to the provisions of Section 206AB/206CCA of Income Tax Act, 1961
+. Local Content Declaration
+
+10. Self Declaration Letter format for OEM
+
+11. MSE Certificate - NSIC, UDYAM, GST, PAN,Turnover, ISO Certificate
+12. HT Credentials- Catalogue
+
+SS oS eS oP eS
+
+Particulars HINDUSTHAN THERMOMETERS
+
+Eligible Preferential Bidder Status Yes, we are eligible for Preferential Bidder - Women
+MSEs
+
+Make in India Class 1 —- Min. 50% Yes, class 1, 80% local Content
+MSME L1+15.00 % [Yes C—“‘“CSC*™*C*C*C*C*C*C*C*C™C™C~C*SCY
+Place of Delivery: CPCL - 600068
+
+Hope all the required documents have been submitted.
+
+If you need any further information please feel free to contact us.
+Thanking you
+
+For HINDUSTHAN THERMOMETERS
+
+Paisx “ar
+
+Ankur Jain
+Page 1 of 4
+o) | Address @! Contact Nos. <@>| Email & website :
+_5, HSIDC Industrial Estate, Ph: 91-171-4000453 = | htindia@gmail.com
+Ambala Cantt-133 001 | Ph: 91-171-2980237 info@htindia.in
+
+VHarans,india | Mb. : 91-9416020237 www.htindia.in
+
+
+────────────────────────────────────────────────────────────
+[PAGE 2 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+4 f Hindusthan Thermometers
+
+ire Manufacturers of High Energy Igniters & Flame Scanners
+
+Ref. No.: HT26/Qi1 Dated: 04-04-2026
+Schedule 1
+
+Material Code & Description HSN Code Quoted
+GST Rate = _
+
+1399960304 85118000 | 14 Nos.
+@18%
+
+Portable High Energy Igniter System
+Battery Operated
+Dwg No.: HT-7000237
+Energy: 18 Joules, Input: 24VDC
+Input Voltage for Charging: 230V AC
+Area Classification: Zone-1 ,Gas Group- IIC, Temp Class T6
+Consisting of
+A. HEA Igniton Excitor Box
+
+P/N: HT-HEA-EXD-BO-73-H7
+
+Operating Voltage: 24VDC
+
+Input main power supply : 230V AC for Charging
+
+Spark Energy: 7 Joules to 18 Joules
+
+FLP & WP Enclosure, Size: 320x320x150 mm,
+
+MOC: LM6
+
+Area Classification: Zone 1 & 2, Gas Group IIC, Temp
+Class T6, PESO Approved Enclosure
+Having Isolator Switch, Push Button & Indicating
+Lamp for easy operation.
+. HEA Igniter Flexible Cable
+P/N: HT-FCA-1029-GLIJ2
+Length: 15 Meters + 500 mm
+2.5 Sq. mm Two Core multi strand copper cable with
+FLP Cable Gland at exciter end and FLP enclosure to
+Igniter Lance end.
+. HEA Rigid Spark Rod (Igniter Lance)
+P/N: HT-RSR-1016-SWL
+Insertion Length: 1500 mm from Stopper
+Length: 1557.5 mm (without Tip)
+Length: 1735 mm + 15 mm, OD: 16mm + 1 mm
+(when mounted with Spark Tip)
+i) Lance have center electrode supported by ceramic
+insulators.
+ii) Lance have removable tip at one end and the other
+end will be connected to small FLP enclosure, suitable
+for area IIC for cable termination. The igniter tip shall
+be prefabricated and will not require any gap
+adjustment.
+. HEA Igniter Spark Tip
+
+P/N: HT-ST-1012-A
+Length: 177 mm + 3.0 mm
+
+Diameter: 16 mm + 1 mm
+
+Page 2 of 4
+
+ae Oe
+
+9 | @! Contact Nos. sa Email & website :
+By ate Ph: 91-171-4000453 htindia@gmail.com
+| Ainbala Cantt-133 001 | Ph: 91-171-2980237 info@htindia.in
+
+Hervana india | Mb. : 91-9416020237 www.htindia.in
+
+
+────────────────────────────────────────────────────────────
+[PAGE 3 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Manufacturers of High Energy Igniters & Flame Scanners
+
+f =
+Orie Hindusthan Thermometers
+
+Ref. No.: HT26/Q11 Dated: 04-04-2026
+
+Schedule 2
+
+Material Code & Description HSN Code Quoted
+GST Rate (YES/NO)
+
+7195990644 85118000 | 10 Nos. ca
+
+Portable High Energy Igniter System 230V AC - Mains @18%
+Operated
+Dwg No.: HT-7000180
+Energy: 18 Joules, Input Voltage: 230V AC
+Area Classification: Zone-1 ,Gas Group- IIC, Temp Class T6
+Consisting of
+A. HEA Igniton Excitor Box
+
+P/N: HT-HEA-EXD-1224-H7
+
+Input Voltage : 230V AC + 10V
+
+Spark Energy: 18 Joules
+
+FLP & WP Enclosure, Size: 320x320x150 mm,
+
+MOC: LM6
+
+Area Classification: Zone 1 & 2, Gas Group IIC, Temp
+
+Class T6, PESO Approved Enclosure
+
+Having Isolator Switch, Push Button & Indicating
+Lamp for easy operation.
+. HEA Igniter Flexible Cable
+P/N: HT-FCA-1029-GLI2
+Length: 15 Meters + 500 mm
+2.5 Sq. mm Two Core multi strand copper cable with
+FLP Cable Gland at exciter end and FLP enclosure to
+Igniter Lance end.
+. HEA Rigid Spark Rod (Igniter Lance)
+P/N: HT-RSR-1016-SWL
+Insertion Length: 1500 mm from Stopper
+Length: 1557.5 mm (without Tip)
+Length: 1735 mm + 15 mm, OD: 16mm + 1 mm
+(when mounted with Spark Tip)
+i) Lance have center electrode supported by ceramic
+insulators.
+ii) Lance have removable tip at one end and the other
+end will be connected to small FLP enclosure, suitable
+for area IIC for cable termination. The igniter tip shall
+be prefabricated and will not require any gap
+adjustment.
+. HEA Igniter Spark Tip
+
+P/N: HT-ST-1012-A
+
+Length: 177 mm + 3.0 mm
+Diameter: 16 mm + 1 mm
+
+Address Contact Nos. OT} Email & website :
+9) @ me :
+5, HSIDC Industrial Estate, Ph: 91-171-4000453 tin ia@gmail .com
+| Ambala Cantt-133 001 Ph: 91-171-2980237 info@htindia.in
+| Mb. : 91-9416020237 www.htindia.in
+
+Haryana, India
+
+
+────────────────────────────────────────────────────────────
+[PAGE 4 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+Manufacturers of High Energy Igniters & Flame Scanners
+
+)
+;
+rte Hindusthan Thermometers
+
+Ref. No.: HT26/Q11 Dated: 04-04-2026
+
+Terms & Conditions:
+1, Price Basis
+
+3 IncoTerms Location CPCL, Manali, Chennai- 600068
+
+Fixed, till execution of order
+
+Price Validity Our Offer is Valid for 120 Days.
+
+Warranty 12 Months from date of commissioning or 18 months from the supply which is
+earlier against any Manufacturing Defect.
+
+7
+
+10.
+Ad,
+
+12.
+
+Fitment cum
+Accepted
+
+rare
+Ww
+
+Interchangeability
+14.
+15.
+16.
+TH
+
+Material Test Certificate | Will be provided along with dispatch documents, as applicable.
+
+NSIC Registration No. NSIC/GP/AMB/2016/0024544, Valid up to: 06-12-2026.
+Udyam No.: UDYAM-HR-01-0001206
+Udyog Aadhaar No. HRO1B0000789, Date of issue: 16-09-2016 (Small)
+
+Thanking You.
+For HINDUSTHAN THERMOMETERS
+
+foe)
+
+wo
+
+20.
+
+N
+
+23.
+24,
+25.
+
+N
+
+5
+
+INDUSTRIAL Page 4 of 4
+
+ESTATE
+
+Address @| Contact Nos. | Email & website :
+v 5, HSIDC Industrial Estate, Ph: 91-171-4000453 htindia@gmail.com
+Ambala Cantt-133 001 | Ph: 91-171-2980237 | info@htindia.in
+| Mb. : 91-9416020237 www.htindia.in
+
+Haryana, India
+
+
+────────────────────────────────────────────────────────────
+[PAGE 5 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+THIS DRAWING IS THE PROPERTY OF HINDUSTHAN THERMOMETERS, www.htindia,in AND MAY NOT BE USED AND COPIED FOR ANY PURPOSE WITHOUT PERMISSION IN.
+
+] 2 =) 4 5 6
+A
+1735mm+15mm
+HANDLE FOR SPARK ROD
+cr 1500mm+5mm
+if
+ON/OFF POWER PUSH BUTTON } }
+JB (EX-D IP-67 IIC T6 ADJUSTABLE @16+0.2/ d
+STOPPER
+
+fr B
+>
+Zz
+P| ARMOURED CABLE -2 CORE
+Fi
+Q BATTERY CHARGING ADAPTER LEAD. enon
+% a 1. ENERGY 7-18 JOULES
+a 2. SPARK RATE >4 PER SECOND
+5 3. INPUT CHARGER SUPPLY 110V-230V AC, 2A, 50Hz,1-PH
+| 4. BATTERY Li-ion 24V DC
+Bo fe
+5
+Fe:
+S| D 1 HEA SPARK TIP (L=177.5mm) HT-ST-1012-A
+a
+g
+ES [cd 1 HEA RIGID SPARK ROD (1557.5mm) HT-RSR-1016-SWL
+fai
+3 B 1 HEA FLEXIBLE CABLE ASSY (L=15meters) HT-FCA-1029-GLJ2
+Zi
+8 A 1 HEA EXCITER BOX (SIZE=320*320*1 50mm) HT-HEA-EXD-BO-7J-H7
+2 ITEM NO.| QTY. | DESCRIPITION PART NO.
+s HINDUSTHAN THERMOMETERS :
+qj 5-INDUSTRIAL ESTATE AMBALA CANTT-133001 HARYANA (INDIA) tre Ere
+| NAME SIGNATURE DATE Email: htindia@gmail.com, www.htindia.in ad
+
+D DRAWN MOHAN 03-04-2026 | MATERIAL: TITLE: CUSTOMER: CHENNAI PETROLEUM D
+5 cup VAY 03-04-2026 WEIGHT: HEA IGNITER SYSTEM CORPORATION LIMITED
+| Hoe Cee BATTERY OPERATED
+g APPVD. ANKUR 03-04-2026 | RRR Nina asec Eee:
+Fe INVENTION ARE RESERVED. ANY REPRODUCTION OF FAX NO: 0171-2971095 DWGNO. HT-7000237
+r= MODIFICATION OF THE DESIGN OR DRAWING IS PROHIBITED
+E THERMOMETERS. T's CONSENT OF HINDUSTHAN SCALE: N.S SHEET: 10F1 A4 _ REVISIONNO: 00 lena. NO:
+
+] 2 3 4 5
+
+D:\2021 \PARTS Sofidworks\201 4\CHENNAI PETROLEUM CORPORATION LIMITED\03-04-2026 ENQ\
+
+
+
+────────────────────────────────────────────────────────────
+[PAGE 6 — Tesseract OCR]
+────────────────────────────────────────────────────────────
+THIS DRAWING IS THE PROPERTY OF HINDUSTHAN THERMOMETERS, www.htindia.in AND MAY NOT BE USED AND COPIED FOR ANY PURPOSE WITHOUT PERMISSION IN
+
+POWER ON O
+
+WRITING FROM THE COMPANY. DUE TO CONTINOUS DEVELOPMENT SPECIFICATION MAY CHANGE. TOLERANCE ON OVER ALL DIMENSION IS +/-5mm, OTHERWISE SPECIFIED.
+
+3 4 5 6
+1735mm+15mm
+HANDLE FOR SPARK ROD
+1500mm+5mm
+{{
+\\ [ao jo I
+\ }}
+ADJUSTABLE Lice 015.2+0.2
+TOPPER
+JB (EX-D IP-67 IIC 16 $
+SPECIFICATION:-
+1. ENERGY 18 JOULES
+2. SPARK RATE >6 PER SECOND
+3. INPUT SUPPLY 230V AC
+D 1 HEA SPARK TIP (L=177.5mm) HT-ST-1012-A
+(24 1 HEA RIGID SPARK ROD (1557.5mm) HT-RSR-1016-SWL
+B 1 |HEA FLEXIBLE CABLE ASSY (L=15meters) HT-FCA-1029-GLI2
+esa
+A 1 HEA EXCITER BOX 230V AC (SIZE=320*320"150mm) —_|HT-HEA-EXD-1224-H7
+ITEMNO.| QTY. | DESCRIPITION PART NO.
+HINDUSTHAN THERMOMETERS ais
+5-INDUSTRIAL ESTATE AMBALA CANTT-133001 HARYANA (INDIA) ir fire
+NAME SIGNATURE DATE Email: htindia@gmail.com, www.htindia.in id
+DRAWN MOHAN 03-04-2026 | MATERIAL: TITLE: CUSTOMER: CHENNAI PETROLEUM
+Sane ee ee eat HEA IGNITOR ASSY
+UNLESS OTHERWISE SPECIFIED: 230V AC
+APPVD ANKUR 03-04-2026 | ERENT Niaetasmens PROJECT:
+RIVERTON Ake ReseeveD, “ANG REPRODUCTION OR. FAX NO: 0171-2971095 DWG NO. HT-7000180
+MODIFICATION OF THE DESIGN OR. DRAWING {S PROHIBITED:
+THERROMEIERS. See a eee Chonowr SCALE: N.T.$ SHEET: 1 OF 1 A4 REVISION NO: 00 |ENa. NO:
+3 4 5
+
+D:\2021\PARTS Solidworks\201 4\CHENNAI PETROLEUM CORPORATION LIMITED\ 23-05-2025 ENQ\,
+
+

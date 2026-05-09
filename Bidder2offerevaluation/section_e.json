@@ -1,12 +1,9 @@
 {
-    "technical_specification_signed_and_sealed": "true",
-    "nil_deviation_statement_signed_and_sealed": "false",
-    "additional_user_department_requirement": "none",
-    "deviations": [
-        "The flame height is slightly higher than the specified range, but within acceptable limits.",
-        "The ignition delay time is longer than expected due to environmental factors."
-    ],
+    "technical_specification_signed_and_sealed": "Not Found in Documents",
+    "nil_deviation_statement_signed_and_sealed": "Yes - Signed & Sealed",
+    "additional_user_department_requirement": "None",
+    "deviations": [],
     "query_to_be_raised": [],
-    "technical_evaluation_status": "completed",
-    "reason_for_rejection": "none"
+    "technical_evaluation_status": "Qualified",
+    "reason_for_rejection": "Not Applicable"
 }
